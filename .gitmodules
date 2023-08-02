@@ -1,3 +1,6 @@
 [submodule "azure-spring-apps-training"]
 	path = azure-spring-apps-training
 	url = https://github.com/microsoft/azure-spring-apps-training
+[submodule "Web-Dev-For-Beginners"]
+	path = Web-Dev-For-Beginners
+	url = https://github.com/microsoft/Web-Dev-For-Beginners
