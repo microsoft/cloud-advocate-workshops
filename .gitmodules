@@ -4,3 +4,15 @@
 [submodule "Web-Dev-For-Beginners"]
 	path = Web-Dev-For-Beginners
 	url = https://github.com/microsoft/Web-Dev-For-Beginners
+[submodule "ML-For-Beginners"]
+	path = ML-For-Beginners
+	url = https://github.com/microsoft/ML-For-Beginners
+[submodule "IoT-For-Beginners"]
+	path = IoT-For-Beginners
+	url = https://github.com/microsoft/IoT-For-Beginners
+[submodule "Data-Science-For-Beginners"]
+	path = Data-Science-For-Beginners
+	url = https://github.com/microsoft/Data-Science-For-Beginners
+[submodule "ai-for-beginners"]
+	path = ai-for-beginners
+	url = https://github.com/microsoft/ai-for-beginners
