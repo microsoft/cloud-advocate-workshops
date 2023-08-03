@@ -1,0 +1,2461 @@
+[
+	{
+		"title": "বিগিনারদের জন্য আইওটি: কুইজ",
+		"complete": "অভিনন্দন, কুইজ সফলভাবে সম্পূর্ণ হয়েছে !",
+		"error": "দুঃখিত, আবার চেষ্টা করুন",
+		"quizzes": [
+			{
+				"id": 1,
+				"title": "লেসন:১ - আইওটি পরিচিতি: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "IoT শব্দে I দ্বারা বোঝানো হয় :",
+						"answerOptions": [
+							{
+								"answerText": "Internet(ইন্টারনেট)",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Iridium(ইরিডিয়াম)",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Ironing(আয়রনিং)",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "২০২০ এর শেষে আইওটি ডিভাইসের ব্যবহারের আনুমানিক সংখ্যা কত?",
+						"answerOptions": [
+							{
+								"answerText": "৩০",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "৩০ মিলিয়ন",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "৩০ বিলিয়ন",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "স্মার্টফোন হলো আইওটি ডিভাইস",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 2,
+				"title": "লেসন:১ - আইওটি পরিচিতি : লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ডিভাইসগুলিকে সর্বদা ইন্টারনেটে সংযুক্ত থাকা দরকার",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইস সর্বাবস্থায় সুরক্ষিত",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "কম পাওয়ারে চালিত আইওটি ডিভাইসে আর্টিফিশিয়াল ইন্টেলিজেন্স চালানো যেতে পারে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 3,
+				"title": "লেসন ২ - IoT এর আরো গভীরে : লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "IoT শব্দে T বলতে বোঝানো হয়:",
+						"answerOptions": [
+							{
+								"answerText": "Transistors(ট্রানজিস্টর)",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Things(থিংস)",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Turkeys(টার্কিস)",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইসগুলি তাদের চারপাশের বিশ্ব থেকে তথ্য সংগ্রহ করতে ব্যবহার করে :",
+						"answerOptions": [
+							{
+								"answerText": "সেন্সর",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "অ্যাকচুয়েটর",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "বার্তাবাহী কবুতর",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইসগুলি গড়পড়তা ডেস্কটপ বা ল্যাপটপ কম্পিউটারের চেয়ে বেশি পাওয়ার ব্যবহার করে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 4,
+				"title": "লেসন ২ - IoT এর আরো গভীরে : লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "সিপিইউ নির্দেশচক্রের (instruction cycle) তিনটি ধাপ হল:",
+						"answerOptions": [
+							{
+								"answerText": "ডিকোড, এক্সিকিউট, ফেচ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": " ফেচ, ডিকোড, এক্সিকিউট",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "থামা, কোলাবোরেট করা, শোনা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "রাস্পবেরি পাই কোন অপারেটিং সিস্টেম রান করে?",
+						"answerOptions": [
+							{
+								"answerText": "কোন অপারেটিং সিস্টেম রান করেনা ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "উইন্ডোজ ৯৫",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "রাস্পবেরি পাই ওএস",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইসগুলি সাধারণত দ্রুত চলে এবং সাধারণ ডেস্কটপ বা ল্যাপটপ কম্পিউটারের চেয়ে বেশি মেমোরি থাকে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 5,
+				"title": "লেসন ৩ - সেন্সর এবং অ্যাকচুয়েটরের সাহায্যে বাহ্যিক জগতের সাথে যোগাযোগ: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "এলইডি একধরণের সেন্সর:",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "সেন্সর ব্যবহৃত হয়:",
+						"answerOptions": [
+							{
+								"answerText": "বাহ্যিক জগতের ডেটা সংগ্রহ করতে ",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "বাহ্যিক জগতকে নিয়ন্ত্রণ করতে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "শুধু তাপমাত্রা মাপতে",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "অ্যাকচুয়েটর ব্যবহৃত হয়:",
+						"answerOptions": [
+							{
+								"answerText": "বাহ্যিক জগতের ডেটা সংগ্রহ করতে ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "বাহ্যিক জগতকে নিয়ন্ত্রণ করতে",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "ইনপ্স্যুরেন্স রিস্ক হিসাব করতে",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 6,
+				"title": "লেসন ৩ - সেন্সর এবং অ্যাকচুয়েটরের সাহায্যে বাহ্যিক জগতের সাথে যোগাযোগ: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "ডিজিটাল সেন্সরগুলি ডেটা প্রেরণ করে:",
+						"answerOptions": [
+							{
+								"answerText": "ভোল্টেজ রেন্জ অনুসারে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "হাই(High) এবং লো(low) ভোল্টেজ হিসেবে",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "ইমেইলে",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "একটি বাটনে প্রেস করলে কোন ডিজিটাল সিগন্যাল প্রেরণ করা হয়?",
+						"answerOptions": [
+							{
+								"answerText": "0",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "1",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "পালস-উইথ মডুলেশন ব্যবহার করে ডিজিটাল ডিভাইস থেকে অ্যানালগ অ্যাকিউটরেটরগুলি নিয়ন্ত্রণ করা যাবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 7,
+				"title": "লেসন ৪ - ডিভাইসকে ইন্টারনেটের সাথে যুক্ত করা: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ডিভাইসগুলি সর্বদা কাজ করার জন্য ইন্টারনেটে সংযুক্ত থাকা প্রয়োজন",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ওয়েব অ্যাপ্লিকেশন বা অন্যান্য ওয়েব APIগুলির মত আইওটি ডিভাইসগুলি সর্বদা HTTP এর মাধ্যমে যোগাযোগ করে",
+						"answerOptions": [
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইসগুলি তাদের সকল সিদ্ধান্ত নেওয়ার জন্য ক্লাউডের উপর নির্ভর করে:",
+						"answerOptions": [
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 8,
+				"title": "লেসন ৪ - ডিভাইসকে ইন্টারনেটের সাথে যুক্ত করা: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "সেন্সর থেকে সংগ্রহ করা এবং ক্লাউডে প্রেরণ করা ডেটাকে বলা হয়:",
+						"answerOptions": [
+							{
+								"answerText": "টেলিমেট্রি",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "কমান্ড",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "পরিমাপ",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইস অফলাইনে থাকলে কোন কমান্ডের কী হবে:",
+						"answerOptions": [
+							{
+								"answerText": "ডিভাইসটি অনলাইনে পুনরায় যুক্ত হলে, কমান্ড আবারো পাঠাতে হবে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "ডিভাইসটি অনলাইনে পুনরায় যুক্ত হলওে, কমান্ড আবারো পাঠানো উচিত হবেনা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "এটি কমান্ড, ডিভাইসটি এবং আইওটি অ্যাপ্লিকেশনটির প্রয়োজনীয়তার উপর নির্ভর করে",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "MQTT অর্থাৎ Message Queueing Telemetry Transport এ ম্যাসেজের সারি থাকে:",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 9,
+				"title": "লেসন ৫ - উদ্ভিদের বৃদ্ধির পূর্বাভাস: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইট ডিভাইসগুলি কৃষিক্ষেত্রে সহায়তা করতে ব্যবহার করা যেতে পারে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "উদ্ভিদের প্রয়োজনীয়তার মধ্যে রয়েছে: (সেরা উত্তরটি বেছে নিতে হবে)",
+						"answerOptions": [
+							{
+								"answerText": "কার্বন ডাইঅক্সাইড, পানি, পুষ্টি উপাদান",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "কার্বন ডাইঅক্সাইড, পানি, পুষ্টি উপাদান, আলো",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "কার্বন ডাইঅক্সাইড, পানি, পুষ্টি উপাদান, আলো, উষ্ণতা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "উন্নত দেশগুলির কৃষকদের ব্যবহারের জন্য সেন্সরগুলি অত্যন্ত ব্যয়বহুল:",
+						"answerOptions": [
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 10,
+				"title": "লেসন ৫ - উদ্ভিদের বৃদ্ধির পূর্বাভাস: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "উদ্ভিদের বৃদ্ধি তাপমাত্রার উপর নির্ভরশীল",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "উদ্ভিদ বৃদ্ধির জন্য কোন তাপমাত্রাগুলো বিবেচনা করতে হবে",
+						"answerOptions": [
+							{
+								"answerText": "সর্বনিম্ন, সর্বোচ্চ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "নিম্নমান, পরিমিত, সর্বোচ্চ",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "শুধুমাত্র সর্বোচ্চ",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "ক্রমবর্ধমান বৃদ্ধির ডিগ্রি (Growing Degree Days) দিনগুলি কোন সূত্রটি ব্যবহার করে গণনা করা হয়:",
+						"answerOptions": [
+							{
+								"answerText": "(day max + day min) - plant base",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "((day max + day min) / 2) - plant base",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "((day min + plant base) / 2)",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 11,
+				"title": "লেসন ৬ - মাটির আর্দ্রতা পরিমাপ: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ডিভাইসগুলি মাটির আর্দ্রতার মতো চারিপার্শ্বিক বৈশিষ্ট্যগুলি সনাক্ত করতে ব্যবহার করা যেতে পারে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "এর মধ্যে কোনটি গাছের বৃদ্ধির জন্য সমস্যা সৃষ্টি করতে পারে (একটি বাছাই করতে হবে)?",
+						"answerOptions": [
+							{
+								"answerText": "খুব অল্প পানি",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "খুব বেশি পানি",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "খুব অল্প বা খুব বেশি পান",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "সমস্ত সেন্সরে স্ট্যান্ডার্ড ইউনিটগুলির জন্য আগে থেকেই ক্যালিব্রেটেড থাকে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 12,
+				"title": "লেসন ৬ - মাটির আর্দ্রতা পরিমাপ: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "মাটির আর্দ্রতা পরিমাপ করার সময়, রোধক (resistive) এবং ক্যাপাসিটিভ আর্দ্রতা সেন্সরের মধ্যে একটি পার্থক্য:",
+						"answerOptions": [
+							{
+								"answerText": "আর্দ্রতা স্তর বাড়ার সাথে সাথে রোধক সেন্সরগুলির ভোল্টেজ মান বাড়ে এবং ক্যাপাসিটিভ সেন্সরগুলির জন্য নিচে নেমে যায়",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "আর্দ্রতা স্তর বাড়ার সাথে সাথে ভোল্টেজ রোধক সেন্সরগুলির ভোল্টেজ মান কমে এবং ক্যাপাসিটিভ সেন্সরগুলির জন্য বেড়ে যায়",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "আর্দ্রতা স্তর বাড়ার সাথে সাথে রোধক সেন্সর এবং ক্যাপাসিটিভ সেন্সর উভয়ের ভোল্টেজ বেড়ে যায়",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "SPI প্রটোকল সাপোর্ট করে:",
+						"answerOptions": [
+							{
+								"answerText": "শুধু ১টি কন্ট্রোলার এবং ১টি পেরিফেরাল",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "শুধু ১টি কন্ট্রোলার এবং একাধিক পেরিফেরাল",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "একাধিক কন্ট্রোলার এবং একাধিক পেরিফেরাল",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "I2C প্রটোকল সাপোর্ট করে:",
+						"answerOptions": [
+							{
+								"answerText": "শুধু ১টি কন্ট্রোলার এবং ১টি পেরিফেরাল",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "শুধু ১টি কন্ট্রোলার এবং একাধিক পেরিফেরাল",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "একাধিক কন্ট্রোলার এবং একাধিক পেরিফেরাল",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 13,
+				"title": "লেসন ৭ - অটোমেটিক গাছে পানি দেয়া: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ডিভাইসগুলি পানির পাম্পগুলি নিয়ন্ত্রণ করতে যথেষ্ট শক্তিশালী",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "অতিরিক্ত ডিভাইসে পাওয়ার নিয়ন্ত্রণ করতে একচুয়েটর ব্যবহার করা যেতে পারে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "সেন্সরগুলি তাত্ক্ষণিকভাবে একচুয়েটরগুলির পরিবর্তনগুলি সনাক্ত করে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 14,
+				"title": "লেসন ৭ - অটোমেটিক গাছে পানি দেয়া: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "রিলে কোন ধরণের সুইচ?",
+						"answerOptions": [
+							{
+								"answerText": "ইলেক্ট্রিকাল",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "ইলেক্ট্রোমেকানিক্যাল",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মেকানিক্যাল",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "রিলে এর মাধ্যম যা করা যায়-",
+						"answerOptions": [
+							{
+								"answerText": "কম পাওয়ারের ডিভাইস দিয়ে হাই-পাওয়ার ডিভাইস নিয়ন্ত্রণ",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "হাই-পাওয়ার ডিভাইস দিয়ে কম পাওয়ারের ডিভাইস নিয়ন্ত্রণ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "দৌড়বিদদের মধ্যে ব্যাটন পরিবর্তন",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "অ্যাকচুয়েটরকে সর্বদা সেন্সর রিডিংয়ের সাথে তাত্ক্ষণিকভাবে প্রতিক্রিয়া জানানো উচিত:",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 15,
+				"title": "লেসন ৮ - গাছকে ক্লাউড থেকে নিয়ন্ত্রণ: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": " একটি পাবলিক MQTT broker দিয়ে কমার্শিয়াল আইওটি প্রজেক্ট করা যায়",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ক্লাউড কম্পিউটিং দ্বারা যা করতে পারি -",
+						"answerOptions": [
+							{
+								"answerText": "কেবল কম্পিউটার ভাড়া নেয়া",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "কম্পিউটার এবং এপ্লিকেশন প্লাটফর্ম ভাড়া নেয়া",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "কম্পিউটার, অ্যাপ্লিকেশন প্ল্যাটফর্ম, সফ্টওয়্যার, সার্ভারলেস প্ল্যাটফর্ম এবং অন্যান্য পরিষেবাগুলি ভাড়া করা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "6 টি মহাদেশে বিভিন্ন দেশে ডেটা সেন্টার সহ একাধিক ক্লাউড সেবাদানকার ীরয়েছে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 16,
+				"title": "লেসন ৮ - গাছকে ক্লাউড থেকে নিয়ন্ত্রণ: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "একটি Actuator নিয়ন্ত্রণ করতে এবং IOT ডিভাইস থেকে একটি প্রতিক্রিয়া পেতে, অ্যাপ্লিকেশন কোড ব্যবহার করে:",
+						"answerOptions": [
+							{
+								"answerText": "ডিভাইস থেকে ক্লাউডে ম্যাসেজ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "ডিভাইস টুইন",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "সরাসরি রিকুয়েস্ট",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "IoT Hub সিক্যুরিটি ছাড়াই যেকোন ডিভাইস কানেক্ট করতে দেয়",
+						"answerOptions": [
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "IoT Hub এর নাম ইউনিক হতে হবে:",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 17,
+				"title": "লেসন ৯ - ক্লাউড থেকে এপ্লিকেশন লজিক নিয়ন্ত্রণ: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ইভেন্টের প্রতিক্রিয়া জানাতে আপনি সার্ভারলেস কোড ব্যবহার করতে পারা যাবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "IoT Hub এ আইওটি ইভেন্ট পাঠানো হলে:",
+						"answerOptions": [
+							{
+								"answerText": "শুধুমাত্র একটি সার্ভিস IoT Hub এর ইভেন্টগুলি পড়তে পারে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "নির্দিষ্ট সংখ্যক সার্ভিস IoT Hub এর ইভেন্টগুলি পড়তে পারে",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "কোন সার্ভিসই IoT Hub এর ইভেন্টগুলি পড়তে পারেনা, এজন্য সার্ভিসকে ডিভাইসে কানেক্ট থাকতে হবে",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি হাবে ইভেন্টগুলি পড়ার সময়, কেবল ক্লাউডে চালিত কোডটি ব্যবহার করতে পারা যাবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 18,
+				"title": "লেসন ৯ - ক্লাউড থেকে এপ্লিকেশন লজিক নিয়ন্ত্রণ: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "Azure ফাংশন লোকালি চালানো এবং ডিবাগ করা যাবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "সার্ভারলেস কোড কেবল জাভাস্ক্রিপ্ট এবং COBOL-এ লেখা যেতে পারে:",
+						"answerOptions": [
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "ক্লাউডে কোন ফাংশন অ্যাপ ব্যবহারের সময়, ইউজারকে তৈরি এবং ডেপলয় করতে হবে:",
+						"answerOptions": [
+							{
+								"answerText": "শুধু ১টি ফাংশন অ্যাপ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "১টি ফাংশন অ্যাপ এবং একটি স্টোরেজ একাউন্ট",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "১টি ফাংশন অ্যাপ এবং একটি স্টোরেজ একাউন্ট এবং এপ্লিকেশন সেটিং",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 19,
+				"title": "লেসন ১০ - গাছগুলোর নিরাপত্তা নিশ্চিতকরণ: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ডিভাইস সর্বদা সুরক্ষিত থাকে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "কোনও আইওটি ডিভাইস দিয়ে হ্যাক করার মতো নজির নেই:",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইস সংযোগের স্ট্রিং যে কারও সাথে ভাগ করতে পারা যাবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 20,
+				"title": "লেসন ১০ - গাছগুলোর নিরাপত্তা নিশ্চিতকরণ: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "Symmetric key encryption এবং asymmetric key encryption এর পার্থক্য:",
+						"answerOptions": [
+							{
+								"answerText": "Symmetric key encryption এর স্পীড asymmetric এর চেয়ে কম",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Symmetric key encryption এখানে asymmetric এর তুলনায় বেশি নিরাপদ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Symmetric key encryption টি asymmetric এর তুলনায় বেশি দ্রুত কাজ করলেও, নিরাপত্তা কম",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Symmetric key encryption টি asymmetric এর তুলনায় ধীরে কাজ করলেও, নিরাপত্তা বেশি",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Self-signed X.509 সার্টিফিকেটগুলো Production Environment এর জন্য আদর্শ",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "X.509 certificates:",
+						"answerOptions": [
+							{
+								"answerText": "আইওটি ডিভাইসগুলোর মাঝে শেয়ার করা উচিত নয়",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "আইওটি ডিভাইসগুলোর মাঝে শেয়ার করা যাবে",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "গোপন রাখা উচিত এবং কোন ডিভাইসের সাথে শেয়ার করা আবেনা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 21,
+				"title": "লেসন ১১ - লোকেশন ট্র্যাকিং: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "অবস্থান সুনির্দিষ্ট করতে প্রয়োজন -",
+						"answerOptions": [
+							{
+								"answerText": "কেবল অক্ষাংশ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "কেবল দ্রাঘিমাংশ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "অক্ষাংশ এবং দ্রাঘিমাংশ",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "যে ধরণের সেন্সর অবস্থান ট্র্যাক করতে পারে তাদের বলা হয় -",
+						"answerOptions": [
+							{
+								"answerText": "GPS",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "PGP",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "GIF",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "গাড়ির অবস্থান ট্র্যাক করা মূল্যহীন",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 22,
+				"title": "লেসন ১১ - লোকেশন ট্র্যাকিং: লেকচার পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "সেন্সর ব্যবহার করে জিপিএস ডেটা প্রেরণে প্রয়োজন হয় ",
+						"answerOptions": [
+							{
+								"answerText": "অক্ষাংশ এবং দ্রাঘিমাংশ স্থানাঙ্ক",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "ঠিকানা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "NMEA sentences",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "একটি ভাল জিপিএস ফিক্স পেতে কমপক্ষে কতটি স্যাটেলাইট থেকে সিগন্যাল গ্রহণ করা দরকার ? ",
+						"answerOptions": [
+							{
+								"answerText": "1",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "2",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "3",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "জিপিএস সেন্সরগুলি ডেটা প্রেরণ করে কোনটির মাধ্যমে ?",
+						"answerOptions": [
+							{
+								"answerText": "SPI",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "UART",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "ইমেইল",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 23,
+				"title": "লেসন ১২ - লোকেশন ডেটা স্টোর  করা: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "IoT ডেটা স্টোর হয় আইওটি হাবে-",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ডেটাকে নিম্নলিখিতভাবে ভাগ করা যায় -",
+						"answerOptions": [
+							{
+								"answerText": "Blob এবং table",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Structured এবং unstructured",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "লাল এবং নীল",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "সার্ভারলেস কোড দ্বারা ডেটাবেস এ আইওটি ডেটা প্রদান করা যায় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 24,
+				"title": "লেসন ১২ - লোকেশন ডেটা স্টোর  করা: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "IoT ডেটা তাৎক্ষণিকভাবে কোন path এ প্রসেস করা হয়:",
+						"answerOptions": [
+							{
+								"answerText": "Hot",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Warm",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Cold",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Azure স্টোরেজ এর কোন কোন ধরণের স্টোরেজ রয়েছে-",
+						"answerOptions": [
+							{
+								"answerText": "Boxes, tubs, bins",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Blob, table, queue এবং file",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Hot, warm, cold",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Azure Functions কে কোন একটি ডেটাবেসে রিটার্ন ভ্যালু দেয়ার মত করে সীমাবদ্ধ করা যায় - can be bound to database to write return values to the database",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 25,
+				"title": "লেসনঃ১৩  -  লোকেশন ডেটা Visualize করা: লেকচার   পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "ডেটা  খোঁজার জন্য বড় টেবলগুলো সুবিধাজনক",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "GPS ডেটা কেবলমাত্র ম্যাপেই দেখা যাবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "বৃহৎ এলাকার ম্যাপে ,  কোন নির্দিষ্ট দূরত্ব ম্যাপে এবং বাস্তবিক জগতে সমান হবে - তা সে যেখানেই পরিমাপ করা হোক না কেন - ",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 26,
+				"title": "লেসন ১৩ - লোকেশন ডেটা Visualize করা: লেকচার  পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "যে সার্ভিস ব্যবহার করে  ম্যাপ আঁকা হয় -",
+						"answerOptions": [
+							{
+								"answerText": "Azure Maps",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Azure Atlas",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Azure World Visualizer",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Azure maps ___ ব্যবহার করে ম্যাপের ডেটা প্লট করে ।",
+						"answerOptions": [
+							{
+								"answerText": "GeoJSON",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "latitude এবং longitude থেকে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Address সমূহের লিস্ট থেকে",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Blobs কে URL  এর সাহায্যে রিট্রিভ করা যায় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 27,
+				"title": "লেসন 14 - Geofences: লেকচার পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "GPS স্থানাঙ্ক ব্যবহার করে একটি নির্দিষ্ট এলাকায় কোন বস্তুর অবস্থান জানা যাবে ",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "GPS অত্যন্ত নির্ভুলভাবে ১মাইলের ভিতরে ১টি নির্দিষ্ট অঞ্চলে যানবাহন প্রবেশ করলেই তা নির্দেশ করতে পারে -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "কখন যানবাহন ট্র্যাক করার জন্য Geofences ব্যবহার করা উচিত -",
+						"answerOptions": [
+							{
+								"answerText": "কেবল যখন ১টি নির্দিষ্ট অঞ্চলে যানবাহন প্রবেশ করে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "কেবল যখন ১টি নির্দিষ্ট অঞ্চল থেকে যানবাহন ত্যাগ করে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "যখন ১টি নির্দিষ্ট অঞ্চলে যানবাহন প্রবেশ করে অথবা সেই অঞ্চল ত্যাগ করে",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 28,
+				"title": "লেসন 14 - Geofences: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি হাব থেকে একাধিক সার্ভিস দিয়ে ডেটা গ্রহণের জন্য আমাদের একাধিক কী দরকার -",
+						"answerOptions": [
+							{
+								"answerText": "কনজ্যুমার গ্রুপ",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "পাইপ",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "আইওটি হাব",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "জিওফেন্স কলে ডিফলট কতটুকু বাফার থাকে ?",
+						"answerOptions": [
+							{
+								"answerText": "5m",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "50m",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "500m",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "জিওফেন্সের ভেতরে পয়েন্টগুলোর দূরত্ব -",
+						"answerOptions": [
+							{
+								"answerText": "0 এর কম ( ঋণাত্মক মান)",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": " 0 এর বড় (ধ্বনাত্মক মান)",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 29,
+				"title": "লেসন ১৫ - ফলের মান শনাক্তকারী মডেলকে ট্রেইনিং দেয়া: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "ক্যামেরাকে আইওটি হাব সেন্সর হিসেবে ব্যবহার করা যায় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "ক্যামেরা ব্যবহার করে ফলগুলোকে শ্রেনিবদ্ধ করে সাজানো যায় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "স্থিরচিত্র বা ইমেজ-নির্ভর কৃত্রিম বুদ্ধিমত্তা (AI) মডেলগুলো খুবই জটিল এবং এগুলোকে ট্রেইন করানো সময়সাধ্য যেখানে হাজার হাজার ইমেজ/ছবি প্রয়োজন",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 30,
+				"title": "লেসন ১৫ - ফলের মান শনাক্তকারী মডেলকে ট্রেইনিং দেয়া: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "কাস্টম ভিশনের ব্যবহৃত টেকনিকে অল্প কিছু ছবি ব্যবহার করে মডেলকে ট্রাইন করানো হয় -",
+						"answerOptions": [
+							{
+								"answerText": "Transformational learning",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Transaction learning",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Transfer learning",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ছবি শ্রেনিবদ্ধকারী (Image classifiers) কে নিম্নের কোনটি ব্যবহার করে ট্রেইন করানো যায় -",
+						"answerOptions": [
+							{
+								"answerText": "প্রতি ট্যাগে কেবল ১টি ছবি",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "প্রতি ট্যাগে অন্তত ৫টি ছবি",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "প্রতি ট্যাগে অন্তত ৫০টি ছবি",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "যে হার্ডওয়্যার দ্বারা মেশিন লার্নিং মডেলকে দ্রুত ট্রেইন করানো যায় এবং Xbox এ সুন্দর গ্রাফিক্স প্রদর্শন করে সেটির নাম -",
+						"answerOptions": [
+							{
+								"answerText": "PGU",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "GPU",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "PUG",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 31,
+				"title": "লেসন ১৬ - আইওটি দ্বারা ফলের মান শনাক্তকরণ: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "IoT ডিভাইসগুলো ক্যামেরা ব্যবহার করার মতো শক্তিশালী নয় ",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ক্যামেরা সেন্সরগুলো ফিল্ম ব্যবহার করে চিত্র ধারণ করে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ক্যামেরা সেন্সরগুলো কোন ধরণের ডেটা প্রেরণ করে -",
+						"answerOptions": [
+							{
+								"answerText": "ডিজিটাল",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "এনালগ",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 32,
+				"title": "লেসন ১৬ - আইওটি দ্বারা ফলের মান শনাক্তকরণ: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "কাস্টম ভিশন মডেলের পাবলিশড বা প্রকাশিত সংস্করণ (version) কে বলা হয় -",
+						"answerOptions": [
+							{
+								"answerText": "Iteration",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Instance",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Iguana",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "শ্রেণিবদ্ধরণ  (classification) এর জন্য যখন ইমেজ পাঠানো হয়, তখন এগুলো দিয়ে মডেলকে পুনরায় ট্রেইন করানো যায় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি ডিভাইস থেকে ক্যাপচার করা ইমেজ ব্যবহার করে মডেলগুলোকে ট্রেইন করার প্রয়োজন নেই কারণ সাধারণ  ক্যামেরা এবং ফোন ক্যামেরা একই মানের ছবি দেয় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 33,
+				"title": "লেসন 17 - ফল শনাক্তকারী মডেলকে Edge এ রান করানো : লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "Edge computing তুলনামূলকভাবে cloud computing এর চাইতে বেশি নিরাপদ",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্য",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Edge এর তুলনায় ক্লাউডে মেশিন লার্নিং মডেলগুলো ব্যবহার করলে তার ফলাফলে ভুলের মান বেশি হয় -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্য",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "Edge ডিভাইসগুলোর সমসময় ইন্টারনেট কানেকশন দরকার.",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 34,
+				"title": "লেসন 17 - ফল শনাক্তকারী মডেলকে Edge এ রান করানো : লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "Edge ডিভাইসে কাস্টম ভিশন মেশিন লার্নিং মডেলগুলো রান করার জন্য কোন ধরণের ফরম্যাট বা ডোমেইন ব্যবহার দরকার হবে ?",
+						"answerOptions": [
+							{
+								"answerText": "General",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Quick Training",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Standard",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Compact",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Food",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Remote Deployment",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "কনটেইনার কী?",
+						"answerOptions": [
+							{
+								"answerText": "Self-contained এপ্লিকেশন যেগুলোতে মেশিন-লার্নিংমডেল থাকে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Self-contained এপ্লিকেশন যেগুলো অন্য প্রোগ্রামের তুলনায় স্বতন্ত্রভাবে রান করে",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Self-contained এপ্লিকেশন যেগুলো শুধুমাত্র Edge ডিভাইসে প্রোগ্রাম রান করে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "self-contained applications এপ্লিকেশন যেগুলো ক্লাউড এবং Edge ডিভাইসের মধ্যে যোগাযোগ পরিচালনা করে",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Edge ডিভাইসে চলা কাস্টমভিশন মডেল দিয়ে কীভাবে মেশিন লার্নিং কে পুনরায় ট্রেইন করানো যায়?",
+						"answerOptions": [
+							{
+								"answerText": "Edge ডিভাইসে ছবি তোলা, তা সেখানে সেইভ করা এবং  ML model কে new image folder এর দিকে নির্দেশ করা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Edge ডিভাইস থেকে ক্লাউডে ইমেজ আপলোড করা, কাস্টমভিশন মডেল দিয়ে মেশিন লার্নিং কে পুনরায় ট্রেইন করা, তারপর আবারো এটিকে EDGE এ ডেপ্লয় করা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Edge ডিভাইসে ছবি তোলা এবং ভবিষ্যদ্বাণী (Prediction) এর আউটপুট দেখা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 35,
+				"title": "লেসন 18 - Trigger fruit quality detection from a sensor: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "Which part of your IoT application gathers data?",
+						"answerOptions": [
+							{
+								"answerText": "Things",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Cloud services",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Edge devices",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "আইওটি এপ্লিকেশনের আউটপুট কেবল একচুয়েটরেই আসে -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "সবকিছুকে সরাসরি আইওটি হাবে কানেক্ট করার প্রয়োজন নেই, বরং গেটওয়ে হিসেবে EDGE ডিভাইসগুলো ব্যবহার করা যায়",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 36,
+				"title": "লেসন ১৮ - সেন্সর দ্বারা ফলের মান শনাক্তকারীকে ট্রিগার করা : লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": " আইওটি এপ্লিকেশন তৈরীর ৩টি উপাদান হলো-",
+						"answerOptions": [
+							{
+								"answerText": "Things, Insights, Actions",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Things, Internet, Databases",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "AI, Blockchain, FizzBuzzers",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "যে উপাদানটি 'things' এর মধ্যে যোগাযোগ রক্ষা করে এবং 'insights' বা ফলাফল দেয়, সেটি হলো - ",
+						"answerOptions": [
+							{
+								"answerText": "Azure Functions",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "IoT Hub",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Azure Maps",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "Flight proximity সেন্সরের টাইমিং কীভাবে কাজ করে work?",
+						"answerOptions": [
+							{
+								"answerText": " এগুলো লেজার বীম প্রেরণ করে এবং কত সময় পর কোন বস্তু থেকে ফেরত আসে তা হিসেব করে ",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "এগুলো শব্দ প্রেরণ করে এবং কত সময় পর কোন বস্তু থেকে তা ফেরত আসে তার হিসেব করে",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "অনেক লম্বা রুলার ব্যবহার করে",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 37,
+				"title": "লেসন ১৯ - স্টক নির্দেশক (Stock Detector) মডেল ট্রেইন করানো: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "AI মডেলগুলোকে অবজেক্ট হিসেবে ব্যবহার করা যাবেনা?",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "IoT এবং AI খুচরাপর্যায়ে ব্যবহার করা যায়-",
+						"answerOptions": [
+							{
+								"answerText": "কেবল স্টক চেক করার জন্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "অনেকধরণের কাজে ব্যবহার করা যায় যেমনঃ স্টক চেক, প্রয়োজনমাফিক মাস্ক মনিটর করা, ফুটফল ট্র্যাক করা এবং অটোমেটিক বিল তৈরী",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "IoT এবং AI খুচরাপর্যায়ে ব্যবহার করা যায়না",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": " অবজেক্ট ডিটেকশনে ব্যবহার করা হয় ",
+						"answerOptions": [
+							{
+								"answerText": "কোন চিত্রের মধ্যে অবজেক্টগুলি সনাক্ত করা এবং তাদের অবস্থান এবং সম্ভাব্যতা ট্র্যাক করা",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "কেবল ইমেজ থেকে বস্তুর সংখ্যা গণনা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "ইমেজগুলো শ্রেণিবদ্ধ (Classify) করা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 38,
+				"title": "লেসন ১৯ - স্টক নির্দেশক (Stock Detector) মডেল ট্রেইন করানো: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "Object detectors গুলো কেবল ১টি রেজাল্ট রিটার্ন করে, তা সে যতটি অবজেক্টই ডিটেক্ট করুক",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "কাস্টমভিশন দ্বারা স্টক গণনার জন্য কোন ডোমেইন ব্যবহার সর্বোত্তম?",
+						"answerOptions": [
+							{
+								"answerText": "General",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Food",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Products on shelves",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": " ১টি object detector কে ট্রেইন করানোর জন্য অন্তত কয়টি ইমেজ দরকার?",
+						"answerOptions": [
+							{
+								"answerText": "1",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "15",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "100",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 39,
+				"title": "লেসন 20 - আইওটি ডিভাইস দ্বারা স্টক চেক করা: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "IoT devices গুলো object detectors ব্যবহার করার মত পাওয়ারফুল নয়",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "Object detectors থেকে যা পাই:",
+						"answerOptions": [
+							{
+								"answerText": " অবজেক্ট এর সংখ্যা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "অবজেক্ট এর সংখ্যা এবং লোকেশন",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "অবজেক্ট এর সংখ্যা, লোকেশন এবং সম্ভাব্যতা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "Object detectors দ্বারা নিখোঁজ স্টকগুলো খুঁজে রোবট দ্বারা সেগুলো ঠিক করা যায়",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 40,
+				"title": "লেসন ২০ - আইওটি ডিভাইস দ্বারা স্টক চেক করা: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "স্টক গণনার জন্য আমাদের কেবল অবজেক্ট এর সংখ্যাই বিবেচনায় আনলেই হবে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "Bounding boxes ব্যবহৃত হয় -",
+						"answerOptions": [
+							{
+								"answerText": "শতকরা নির্ভর স্থানাংকব্যবস্থায়",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "পিক্সেল নির্ভর স্থানাংকব্যবস্থায়",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "সেন্টিমিটার নির্ভর স্থানাংকব্যবস্থায়",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": " অবজেক্ট ওভারল্যাপ করলে তা বুঝতে পারে?",
+						"answerOptions": [
+							{
+								"answerText": "হ্যাঁ",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "না",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 41,
+				"title": "লেসন ২১ - আইওটি ডিভাইস দ্বারা স্পীচ বুঝতে পারা: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "আইওটি ডিভাইস দ্বারা স্পীচ বুঝতে পারা যায় ঃ",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "ভয়েস এসিস্ট্যান্টগুলোর উচিত সকল অডিও প্রসেসিং এর জন্য ক্লাউডে পাঠানো",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "স্পীচ বুঝতে পারার জন্য IoT ডিভাইসগুলোর বড় মাইক্রোফোন প্রয়োজন-",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 42,
+				"title": "লেসন 21 -  আইওটি ডিভাইস দ্বারা স্পীচ বুঝতে পারা : লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "মাইক্রোফোন কোন ধরণের সেন্সর ?",
+						"answerOptions": [
+							{
+								"answerText": "ডিজিটাল",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": " এনালগ",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "শব্দ সংকেতকে কীভাবে ডিজিটাল সিগন্যালে রূপান্তর করা যায় ?",
+						"answerOptions": [
+							{
+								"answerText": "Pulse Code Modulation",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Pure Code Multiplication",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Pulse Width Maximization",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "১ সেকেন্ডে 16-bit এর অডিও কে 16KHz এ স্যাম্পল করা হলে, তা কত বড় ?",
+						"answerOptions": [
+							{
+								"answerText": "1KB",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "16KB",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "32KB",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 43,
+				"title": "লেসন ২২ - ভাষা বুঝতে পারা: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "ভাষা বুঝতে পারার জন্য কিছু নির্দিষ্ট শব্দ বোঝা জরুরী",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "ভাষা বুঝতে পারার ক্ষেত্রে -",
+						"answerOptions": [
+							{
+								"answerText": "কোন নির্দিষ্ট বাক্যে স্বতন্ত্র কিছু শব্দ দেখে তার অর্থ বোঝা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "আগে থেকেই বোঝানো বাক্যগুলো খুঁজে অর্থ বোঝা",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "পুরো বাক্য দেখে শব্দগুলোর পেছনের কনটেক্সট থেকে অর্থ বোঝা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": " ক্লাউড প্রোভাইডারদের কাছে AI সার্ভিস রয়েছে যেগুলো ভাষা বুঝতে পারে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 44,
+				"title": "লেসন ২২ - ভাষা বুঝতে পারা: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "১টি বাক্যকে বোঝার জন্য কীভাবে ভাঙা হয় -",
+						"answerOptions": [
+							{
+								"answerText": "Ideas and explanations",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Intents and entities",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Imps and elves",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "ভাষা বোঝার জন্য ব্যবহৃত Microsoft service কে বলা হয়",
+						"answerOptions": [
+							{
+								"answerText": "LUIS",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "Luigi",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Jarvis",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "এখানে 'set a 3 minute timer' বাক্যটিতে -",
+						"answerOptions": [
+							{
+								"answerText": "এখানে  ইন্টেন্ট হলো 3 minutes এবং এনটিটি হলো a timer",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "এখানে  ইন্টেন্ট হলো minutes, এবং এনটিটি হলো 3 timers",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "এখানে  ইন্টেন্ট হলো set a timer এবং এনটিটি হলো 3 minutes",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 45,
+				"title": "লেসন ২৩ - টাইমার সেট করে মৌখিক ফীডব্যাক দেয়া: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "AI থেকে মৌখিক বক্তব্য তৈরী করলে সেগুলো একঘেঁয়ে এবং রোবোটিক",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "AI model গুলো কেবল American English  এই  বক্তব্য তৈরী করতে পারে",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "AI model গুলো '1234' লেখাটিকে কোন মৌখিক বক্তব্যে পরিণত করবে?",
+						"answerOptions": [
+							{
+								"answerText": "One two three four",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "One thousand two hundred and thirty four",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "এটি 'one two three four' বা 'one thousand two hundred and thirty four' যেকোনটিই হতে পারে, কনটেক্সট এর ভিত্তিতে",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 46,
+				"title": "লেসন ২৩ - টাইমার সেট করে মৌখিক ফীডব্যাক দেয়া: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "মৌখিক তৈরীর ৩টি গঠনগত অংশ হলো-",
+						"answerOptions": [
+							{
+								"answerText": "টেক্সট বিশ্লেষণ, সেই বিশ্লেষণ বুঝতে পারা, শব্দ তৈরী",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "টেক্সট বিশ্লেষণ, ভাষাগত বিশ্লেষণ, গাঠনিক সংকেত তৈরী",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "শব্দ বিশ্লেষণ, অডিও তৈরী",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "বক্তব্য তৈরীকারী মডেলগুলো সত্যিকারের মানুষের মত কথা বলতে পারে -",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "বক্তব্য এনকোড করার জন্য যে মার্ক-আপ ল্যাংগুয়েজ ব্যবহৃত হয়, সেটি হলো -",
+						"answerOptions": [
+							{
+								"answerText": "SSML",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "MSSL",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "SpeechXML",
+								"isCorrect": "false"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 47,
+				"title": "লেসন 24 - একাধিক ভাষা সাপোর্ট করা: লেকচার-পূর্ববর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "ভাষা বোঝার মানে হলো ইংরেজি বোঝা",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					},
+					{
+						"questionText": "AI speech to text models understand multiple languages:",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "AI অনুবাদে প্রতিটি শব্দভিত্তিক অনুবাদ হয়-",
+						"answerOptions": [
+							{
+								"answerText": "সত্য",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "মিথ্যা",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 48,
+				"title": "লেসন ২৪ - একাধিক ভাষা সাপোর্ট করা: লেকচার-পরবর্তী কুইজ",
+				"quiz": [
+					{
+						"questionText": "মেশিন ট্রান্সলেশন নিয়ে গবেষণা করা হচ্ছে কত বছর ধরে -",
+						"answerOptions": [
+							{
+								"answerText": "৭০ বছর",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "১৭ বছর",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "৭ বছর",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "AI ভাষা অনুবাদকগুলোকে বলা হয় -",
+						"answerOptions": [
+							{
+								"answerText": "Noddy translators",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Neural translators",
+								"isCorrect": "true"
+							},
+							{
+								"answerText": "AI দিয়ে অনুবাদ করা যায়না",
+								"isCorrect": "false"
+							}
+						]
+					},
+					{
+						"questionText": "কোন alien ভাষাগুলো্কে Microsoft translator সাপোর্ট করে -",
+						"answerOptions": [
+							{
+								"answerText": "Na'vi",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Alienese",
+								"isCorrect": "false"
+							},
+							{
+								"answerText": "Klingon",
+								"isCorrect": "true"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
