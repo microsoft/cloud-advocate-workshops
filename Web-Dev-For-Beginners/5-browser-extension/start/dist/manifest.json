@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "My Carbon Trigger",
+	"version": "0.1.0",
+	"host_permissions": ["<all_urls>"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_popup": "index.html"
+	}
+}
