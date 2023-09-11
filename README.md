@@ -1,4 +1,4 @@
-# Project
+# Cloud Advocate Workshops
 This repo represents a central collection of workshop content authored by the Cloud Advocacy team at Microsoft. 
 
 These workshops are cloned from a variety of repos and are presented here in a central location to simplify the process of locating all workshop content authored by the Cloud Advocacy team. 
