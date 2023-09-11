@@ -1,0 +1,14 @@
+//From Part 4, using the search operator
+
+//Search IOC:
+search "rodtrent"
+
+//Search distinct table
+search "rodtrent"
+| distinct $table
+
+//Search specific table
+search in (OfficeActivity) "rodtrent"
+
+//Search with wildcard
+search in (Device*) "rodtrent"
