@@ -1,14 +1,13 @@
 # Project
+This repo represents a central collection of workshop content authored by the Cloud Advocacy team at Microsoft. 
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+These workshops are cloned from a variety of repos and are presented here in a central location to simplify the process of locating all workshop content authored by the Cloud Advocacy team. 
 
-As the maintainer of this project, please make a few updates:
+A separate set of workshops authored for the student/education audience by the Next Gen Advocacy Team can be located in the following repo https://github.com/microsoft/workshop-library
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+The workshop content in this repo is cloned from the source location on a periodic basis. Workshop titles, location and source location are listed in the table below. Cloud Advocates that wish to update workshop content here more frequently can issue a pull request against this repo or wait for syncrhonization to occur from the existing source repo. Cloud Advocates who wish to use this repo as the primary authoritative location for new or existing workshop content are welcome to do so.
+
+Some workshops here are actively being updated and some are in a relatively final state. This repo also hosts workshops written by people during their time as Cloud Advocates who have since moved on to other roles but where the workshop content is still relevant and useful to Cloud Advocacy's technical communities.
 
 ## Contributing
 
