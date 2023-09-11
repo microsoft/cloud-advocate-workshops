@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"resources": [{
+			"type": "Microsoft.ApiManagement/service",
+			"apiVersion": "2021-08-01",
+			"name": "sampleAPIMServiceName",
+			"location": "West US 2",
+			"identity": {
+				"type": "SystemAssigned"
+			},
+			"sku": {
+				"name": "Developer",
+				"capacity": 1
+			},
+			"properties": {
+				"publisherEmail": "sampleEmail",
+				"publisherName": "sampleName",
+				"apiVersionConstraint": {
+					"minApiVersion": "2019-12-01"
+				},
+				"virtualNetworkType": "Internal",
+				"customProperties": {
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls10": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls11": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Ssl30": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls10": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls11": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Ssl30": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Protocols.Server.Http2": "True",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TripleDes168": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_RSA_WITH_AES_128_CBC_SHA": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_RSA_WITH_AES_256_CBC_SHA": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_RSA_WITH_AES_128_CBC_SHA256": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_RSA_WITH_AES_256_CBC_SHA256": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA": "False",
+					"Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_RSA_WITH_AES_128_GCM_SHA256": "False"
+				}
+			}
+		},
+		{
+			"type": "Microsoft.ApiManagement/service/subscriptions",
+			"apiVersion": "2021-08-01",
+			"name": "[concat('sampleAPIMServiceName', '/vulnerable-v1')]",
+			"dependsOn": [
+				"[resourceId('Microsoft.ApiManagement/service', 'sampleAPIMServiceName')]"
+			],
+			"properties": {
+				"allowTracing": true,
+				"displayName": "sampleDisplayName",
+				"ownerId": "string",
+				"primaryKey": "string",
+				"scope": "/api/test-API",
+				"secondaryKey": "string",
+				"state": "active"
+			}
+		},
+		{
+			"type": "Microsoft.ApiManagement/service/apis",
+			"apiVersion": "2021-12-01-preview",
+			"name": "[concat('sampleAPIMServiceName', '/testprotocol')]",
+			"dependsOn": [
+				"[resourceId('Microsoft.ApiManagement/service', 'sampleAPIMServiceName')]"
+			],
+			"properties": {
+				"displayName": "apimhelloworld",
+				"apiRevision": "1",
+				"description": "Import from \"apimhelloworld\" Function App",
+				"subscriptionRequired": true,
+				"path": "apimhelloworld",
+				"protocols": [
+					"https"
+				],
+				"isCurrent": true
+			}
+		},
+		{
+			"type": "Microsoft.ApiManagement/service/properties",
+			"name": "[concat('sampleAPIMServiceName', '/', 'samplePropertyName')]",
+			"apiVersion": "2018-06-01-preview",
+			"scale": null,
+			"properties": {
+				"displayName": "samplePropertyName",
+				"value": "sampleFunctionHostKey",
+				"tags": ["key", "function"],
+				"secret": true
+			}
+		},
+		{
+			"name": "[concat('sampleAPIMServiceName', '/', 'vulnerable-v1')]",
+			"type": "Microsoft.ApiManagement/service/backends",
+			"apiVersion": "2018-01-01",
+			"dependsOn": [
+				"[resourceId('Microsoft.ApiManagement/service/properties', 'sampleAPIMServiceName', 'samplePropertyName')]"
+			],
+			"properties": {
+				"title": null,
+				"description": "Backend of API management",
+				"protocol": "http",
+				"credentials": {
+					"query": {
+						"code": ["[concat('{{', 'samplePropertyName', '}}')]"]
+					}
+				},
+				"resourceId": "[concat('https://management.azure.com/subscriptions/', subscription().id, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', 'functionAppName')]",
+				"tls": {
+					"validateCertificateChain": true,
+					"validateCertificateName": true
+				}
+			}
+		}
+	]
+}
