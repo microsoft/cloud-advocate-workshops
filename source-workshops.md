@@ -1,6 +1,6 @@
 # Source Workshops and mappings
 
-| Name | Source Repo | This Repo |
+| Name | This Repo | Source Repo |
 | -------- | -------- | -------- |
 | Azure Spring Apps Training |  https://github.com/microsoft/azure-spring-apps-training | https://github.com/microsoft/cloud-advocate-workshops/tree/main/Azure-Spring-Apps-Training |
 | Azure Spring Apps Training | https://github.com/microsoft/cloud-advocate-workshops/tree/main/Azure-Spring-Apps-Training | https://github.com/microsoft/azure-spring-apps-training |
