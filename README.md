@@ -3,6 +3,8 @@ This repo represents a central collection of workshop content authored by the Cl
 
 These workshops are cloned from a variety of repos and are presented here in a central location to simplify the process of locating all workshop content authored by the Cloud Advocacy team. 
 
+The source and authoritative location of each workshop hosted in this repo can be found in the following file: https://https://github.com/microsoft/cloud-advocate-workshops/tree/main/source-workshops.md
+
 A separate set of workshops authored for the student/education audience by the Next Gen Advocacy Team can be located in the following repo https://github.com/microsoft/workshop-library
 
 The workshop content in this repo is cloned from the source location on a periodic basis. Workshop titles, location and source location are listed in the table below. Cloud Advocates that wish to update workshop content here more frequently can issue a pull request against this repo or wait for syncrhonization to occur from the existing source repo. Cloud Advocates who wish to use this repo as the primary authoritative location for new or existing workshop content are welcome to do so.
