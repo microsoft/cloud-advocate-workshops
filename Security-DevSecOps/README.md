@@ -213,7 +213,7 @@ json
     function showMessage() {
       alert("Thanks for attending LAB160! Let's secure the world one code at a time!");
     }
-    const aws_secret_access_key="CWaiyZjNC212f9P7hcxG17Ae803jEdFu8pzfryqf";
+    const aws_secret_access_key="XxXxXxXxYyYyYyYyYyYyZzZzZzZzZzZzXxXxXxXx";
   </script>
 </body>
 </html>
