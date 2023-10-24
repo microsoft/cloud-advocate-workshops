@@ -1,5 +1,6 @@
 # Cloud Advocate Workshops
-This repo represents a central collection of workshop content authored by the Cloud Advocacy team at Microsoft.
+
+This repo represents a central collection of workshop content authored by the Cloud Advocacy team at Microsoft. The aka.ms link for this repo is https://aka.ms/cloud-advocate-workshops
 
 A workshop usually involves a set of practical exercises and supporting materials that an instructor uses to lead a group of people through at an event like a technology conference. A file listing common advocacy workshop elements can be found here: https://github.com/microsoft/cloud-advocate-workshops/tree/main/common-workshop-elements.md
 
