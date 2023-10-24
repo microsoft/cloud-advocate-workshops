@@ -1,5 +1,5 @@
 # Cloud Advocate Workshops
-This repo represents a central collection of workshop content authored by the Cloud Advocacy team at Microsoft. 
+This repo represents a central collection of workshop content authored by the Cloud Advocacy team at Microsoft. The aka.ms link for this repo is https://aka.ms/cloud-advocate-workshops
 
 These workshops are cloned from a variety of repos and are presented here in a central location to simplify the process of locating all workshop content authored by the Cloud Advocacy team. 
 
