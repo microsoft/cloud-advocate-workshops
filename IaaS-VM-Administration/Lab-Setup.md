@@ -1,3 +1,5 @@
+```Cloud Shell PowerShell
+
 # Enter cloudshell and create a file named deploy.ps1. Paste in the contents of this file and then execute.
 
 # Assign Variables
@@ -31,3 +33,5 @@ az keyvault create --name $keyVaultNameWithRandom --resource-group "$rgname" --l
 
 # Create Storage Account for Boot Diagnostics
 az storage account create --name $bootDiagNameWithRandom --resource-group $rgname --location $lablocation --sku Standard_LRS --kind StorageV2
+
+```
