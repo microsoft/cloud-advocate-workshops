@@ -4,7 +4,7 @@ In this workshop you’re going to learn about Azure’s IaaS VM supporting tech
 
 ## Section Zero: Lab Deployment
 
-This exercise allows you to verify that all lab assets have deployed correctly. You can see a quick audio free video showing the lab steps here: [Exercise Zero Demo Video](https://youtu.be/d1rUt9Zbcwg)
+This exercise allows you to verify that all lab assets have deployed correctly. You can see a quick audio free video showing the lab steps here: [Exercise Zero Demo Video](https://youtu.be/2uwsyEMZxIY)
  
 
 ### Exercise 0.1. Verify Lab Deployment
