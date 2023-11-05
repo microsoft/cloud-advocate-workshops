@@ -26,9 +26,9 @@ To verify that the lab resources have deployed completely, perform the following
 8. In the Search bar of the Azure Portal, type **Resource Groups** and select **Resource Groups**.
 9. In the list of resource groups, Select the **InfraResourceGroup** resource group. Take a note of the Azure Region that your resource group is configured to use. You will deploy all resources in the lab to this region and will have to enter this region when using a variety of wizards. If you restart the lab from the beginning, you may be assigned to a new region.
 10. The lab will be deployed when you see the following items present:
--  A virtual Machine with the name SYD-LINUX
--  A virtual machine with the name SYD-WS2022
--  Key Vault with the name "IaaSVMKV".
+-  A virtual Machine with the name **SYD-LINUX**
+-  A virtual machine with the name **SYD-WS2022**
+-  Key Vault with the name **IaaSVMKVxxxxx** *Where xxxxx is a number to provide a unique name*.
 11. You may need to wait several minutes and press refresh several times in the Azure portal.
 12. If the VM resources do not become available after 15 minutes, cancel and restart the lab.
 
