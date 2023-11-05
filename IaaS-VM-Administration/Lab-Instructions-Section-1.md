@@ -152,3 +152,5 @@ In this exercise you will resize a VM running Linux from the Azure Portal.
 3. On the list of VM sizes, search for and choose **D4s_v3** and then choose **Resize**.
 4. After the operation completes (may take up to 15 minutes), select the **Overview** item and verify that the VM is now of the **Standard D4s_v3** size and has **4 vcpus** and **16 GiB** of memory.
 
+===
+Choose Next to go to Section 2

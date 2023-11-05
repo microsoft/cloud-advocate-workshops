@@ -115,3 +115,5 @@ In this exercise you will configure BitLocker Encryption for the Windows Server 
 38. On the **Updates** page, review the update classifications and choose **Review + Create**.
 39. On the **Review + Create** page, wait for validation to occur and then choose **Create**.
 
+===
+Choose Next to go to Section 5

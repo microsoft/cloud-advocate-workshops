@@ -56,3 +56,5 @@ In this exercise you’ll enable Defender for Cloud licenses to allow for functi
 9. Next to Resource Manager under Cloud Workload Protection (CWP) set the slider to On.
 10. Select Save at the top under Defender Plans.
 
+===
+Choose Next to go to Section 1

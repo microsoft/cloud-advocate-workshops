@@ -206,3 +206,5 @@ The serial console connection allows you to make a special administrative connec
 20. On the **SYD-WS2022** page Under **Help** choose **Boot Diagnostics** and then choose **Serial log**.
 21. You should see a log record of the commands you issued when connected via the Serial connection.
 
+===
+Choose Next to go to Section 3
