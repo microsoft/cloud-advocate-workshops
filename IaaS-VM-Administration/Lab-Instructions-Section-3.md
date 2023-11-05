@@ -150,3 +150,5 @@ In this exercise you will configure a performance alert and an action to occur b
 9.  On the **Notifications** page, On the **notification type** drop down menu select **Email Azure Resource Manager Role** and set the name as **Email Admin**. Choose the pencil icon under **Selected**. On the **Email Azure Resource Manager Role** page, use the drop down and then select **Owner**. Choose **OK**. Choose **Next: Details**
 10. On the **Details** page, enter the alert rule name **HighCPU**. Choose **Review + Create** and then choose **Create**.
 
+===
+Choose Next to go to Section 4
