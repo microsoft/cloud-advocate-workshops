@@ -8,6 +8,8 @@ Section two only requires that you have performed section zero and the parts of 
 
 In this exercise, you will enable boot diagnostics on Azure IaaS Virtual Machines.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 2.1 Demo Video](https://youtu.be/I8XbtRHL7k0)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-WS2022**.
 3. Under **Monitoring**, choose **Diagnostic settings**.
@@ -30,6 +32,8 @@ In this exercise, you will enable boot diagnostics on Azure IaaS Virtual Machine
 ### Exercise 2.2. Configure and administer Windows Server with Windows Admin Center
 
 In this exercise, you will configure a Windows Server IaaS VM to be managed from the Azure portal using Windows Admin Center.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 2.2 Demo Video](https://youtu.be/k6gFW-mnJKk)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-WS2022**.
@@ -98,6 +102,8 @@ In this exercise, you will configure a Windows Server IaaS VM to be managed from
 
 In this exercise you will configure Automanage for SYD-WS2022. Automanage allows you to automatically configure a number of Azure IaaS services that support Azure VMs without having to configure each on and individual basis.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 2.3 Demo Video](https://youtu.be/biEZMJLXvdY)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-WS2022**.
 3. On the SYD-WS2022 page, choose **Automanage** under **Operations**.
@@ -132,6 +138,8 @@ In this exercise you will configure Automanage for SYD-WS2022. Automanage allows
 
 In this exercise you will use Azure Policy to evaluate several elements of the configuration of IaaS VMs. Policy can be a useful tool to allow you to determine if your IaaS VMs are configured correctly or require manual or automatic remediation.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 2.4 Demo Video](https://youtu.be/1HG6jmKDoE4)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
 3. On the SYD-LINUX page, select **Policies** under **Operations**.
@@ -154,6 +162,8 @@ In this exercise you will use Azure Policy to evaluate several elements of the c
 ### Exercise 2.5. Connect via Serial Connection to IaaS VM
 
 The serial console connection allows you to make a special administrative connection to an IaaS VM when there may be some sort of fault with the network configuration. Serial Console allows you to perform actions against the VM from a command line environment even if the network connection doesn’t work. You can use this for troubleshooting or diagnosis purposes. You can make serial console connections to Linux IaaS VMs and Windows Server IaaS VMs.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 2.5 Demo Video](https://youtu.be/AXhXpbMrO3M)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
