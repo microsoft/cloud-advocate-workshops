@@ -9,6 +9,8 @@ In this section you will use tools outside the VM to manage the configuration of
 
 In this section, you will perform manual configuration of an IaaS VM’s network settings. Unlike a normal virtual machine where you would edit IP address information from within the virtual machine using the operating system tools, the only way you can modify IP address settings for an Azure IaaS VM is by editing the properties of the network adapter from the Azure management plane. Some network address modifications require that the Azure IaaS VM be restarted.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 1.1 Demo Video](https://youtu.be/vgOJi4T_11k)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
 2. In the SYD-WS2022 page, choose Network Settings under Networking.
 3. On the Network Settings page, choose Network Interface. This will have a name similar to the VM and will be in the format syd-ws2022XYZ.
@@ -29,6 +31,8 @@ In this section, you will perform manual configuration of an IaaS VM’s network
 ### Exercise 1.2. Configure Network Security Groups
 
 In this section of the exercise, you will manage the Network Security Group assigned to the IaaS VM network adapter. This network security group functions as a packet filter at the network adapter level. In this exercise you are going to create an inbound rule for port 80, so that you’ll be able to contact the web server that you’ll install on the Windows Server virtual machine.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 1.2 Demo Video](https://youtu.be/2v3SPyJg2UA)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
 2. In the **SYD-WS2022** page, choose **Network settings** under **Networking** (*Search for Networking if you cannot find it*).
@@ -90,6 +94,8 @@ In this section of the exercise, you will manage the Network Security Group assi
 
 In this exercise, you will add a disk to an IaaS VM running Ubuntu, connect to the VM using SSH from CloudShell, format the newly added disk and then mount it.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 1.3 Demo Video](https://youtu.be/sBeJlHAeTyk)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
 3. Under **Settings** choose **Disks**.
@@ -146,6 +152,8 @@ In this exercise, you will add a disk to an IaaS VM running Ubuntu, connect to t
 ### Exercise 1.4. Resize a VM
 
 In this exercise you will resize a VM running Linux from the Azure Portal.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 1.4 Demo Video](https://youtu.be/tWNp0Mfb9MM)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-LINUX**.
 2. Under **Settings** choose **Size**. You can also search for Size on the search bar at the top of the SYD-LINUX tools page.
