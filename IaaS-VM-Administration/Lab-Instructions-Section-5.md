@@ -8,23 +8,10 @@ This section requires that you have completed Section Zero and Exercise 2.3
 
 As you have enabled automanage in Exercise 2.3, each IaaS VM is already configured for backups. Whilst Automanage has been configured, it is unlikely that a backup has been taken as you have only enabled this service relatively recently. You can perform manual backups in addition to the backups managed through automanage at any time. You perform a manual backup by performing the following steps:
 
-1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-LINUX**.
-2. On the SYD-LINUX page Search bar at the top of the list of items, type **Backup**.
-3. On the Welcome to Azure Backup for Azure VMs page, configure the following settings and choose **Enable Backup**.
-- Recovery Services Vault: Select Existing
-- Vault: Choose the **DefaultBackupVault** for your region.
-- Policy sub type: **Standard**
-- Choose Backup Policy: **DefaultPolicy**
-4. On the **Backup** page, choose **Backup Now**.
-5. On the **Retain Backup Until** page, accept the default and choose **OK**.
-6. After the deployment completes, in the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-LINUX**.
-7. On the SYD-LINUX page Search bar at the top of the list of items, type **Backup**.
-8. On the SYD-LINUX Backup page, choose **Backup Now**.
-9. On the **Backup Now** page, accept the default retention date and choose **OK**.
-10. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
-11. On the SYD-WS2022 page Search bar at the top of the list of items, type **Backup**.
-12. On the SYD-WS2022 page, note that backup is already configured by automanage but that the initial backup is pending and hasn’t been completed. Choose **Backup Now**.
-13. On the **Backup Now** page, accept the default backup retention option and choose **OK**.
+1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
+2. On the SYD-WS2022 page Search bar at the top of the list of items, type **Backup**.
+3. On the SYD-WS2022 page, note that backup is already configured by automanage but that the initial backup is pending and hasn’t been completed. Choose **Backup Now**.
+4. On the **Backup Now** page, accept the default backup retention option and choose **OK**.
 
 ### Exercise 5.2: Configure Azure Size Recovery
 
