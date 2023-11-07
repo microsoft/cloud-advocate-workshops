@@ -7,7 +7,7 @@ In this section you will use tools outside the VM to manage the configuration of
 
 ### Exercise 1.1. Manage VM Network Configuration
 
-In this section, you will perform manual configuration of an IaaS VM’s network settings. Unlike a normal virtual machine where you would edit IP address information from within the virtual machine using the operating system tools, the only way you can modify IP address settings for an Azure IaaS VM is by editing the properties of the network adapter from the Azure management plane. Some network address modifications require that the Azure IaaS VM be restarted.
+In this section, you will perform manual configuration of an IaaS VM’s network settings. Unlike a normal virtual machine where you would edit IP address information from within the virtual machine using the operating system tools, the only way you can modify IP address settings for an Azure IaaS VM is by editing the properties of the network adapter from the Azure management plane. Some network address modifications require that the Azure IaaS VM be restarted. If the process appears to be frozen after 5 or more minutes, consider stopping and then restarting SYD-WS2022.
 
 You can see a quick audio free video showing the lab steps here: [Exercise 1.1 Demo Video](https://youtu.be/vgOJi4T_11k)
 
@@ -78,13 +78,13 @@ You can see a quick audio free video showing the lab steps here: [Exercise 1.2 D
 21. After a few moments the Cloud Shell windows opens. Review the message and type **yes** and press Enter. If you get a token error involving time, restart the browser and return to step 31.
 22. Enter the following commands to update the VM.
 
-+++Sudo apt update && sudo apt upgrade -y+++
++++sudo apt update && sudo apt upgrade -y+++
 
-23. If you are prompted by a Newer Kernel Available message, press **Tab** to select **OK** and press **Enter**. After this has occurred (or if it does not occur), enter the following to install ngingx.
+23. If you are prompted by a Newer Kernel Available message or needing to restart the service due to outdated libraries, press **Tab** to select **OK** and press **Enter**. After this has occurred (or if it does not occur), enter the following to install ngingx.
 
-+++Sudo apt install nginx -y+++
++++sudo apt install nginx -y+++
 
-24. Press **Tab** and select **OK** and press **Enter** if prompted about a pending Kernel upgrade.
+24. Press **Tab** and select **OK** and press **Enter** if prompted about a pending Kernel upgrade or if you need to restart a service due to outdated libraries.
 25. Type **exit** twice and select **Quit** to close the cloud shell connection to SYD-LINUX.
 26. On the SYD-LINUX tools menu select **Overview** at the top of the item list.
 27. On the Overview page, under **Networking**, copy the **public IP address** into a new browser tab and press **Enter**. Make a note of this public IP address using Notepad in the lab VM as you will use it later in the exercise.
@@ -117,19 +117,19 @@ You can see a quick audio free video showing the lab steps here: [Exercise 1.3 D
 
 11. Format the disk with ext4 by running the following command
 
-+++Sudo mkfs.ext4 /dev/sdc+++
++++sudo mkfs.ext4 /dev/sdc+++
 
 12. Create a folder to mount the disk
 
-+++Sudo mkdir /mnt/newdisk+++
++++sudo mkdir /mnt/newdisk+++
 
 13. Mount the disk in the new folder
 
-+++Sudo mount -t ext4 /dev/sdc /mnt/newdisk+++
++++sudo mount -t ext4 /dev/sdc /mnt/newdisk+++
 
 14. Verify that the disk is mounted by running the following commands
 
-+++Lsblk+++
++++lsblk+++
 
 +++df+++
 
