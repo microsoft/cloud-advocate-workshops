@@ -5,6 +5,9 @@
 In this section you will integrate Azure Monitor into the IaaS VMs SYD-LINUX and SYD-WS2022.
 
 ### Exercise 3.1. Configure VM Insights
+In this exercise, you will enable VM Insights.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.1 Demo Video](https://youtu.be/PxOlBVGi-jo)
 
 1. In the Search bar of the Azure Portal, type **Monitor** and then choose **Monitor**.
 2. Under **Insights** choose **Virtual Machines**.
@@ -27,6 +30,8 @@ In this section you will integrate Azure Monitor into the IaaS VMs SYD-LINUX and
 
 In this exercise you’ll use Metrics to create a readout of available memory, CPU utilization and Network Out total for each IaaS VM.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 3.2 Demo Video](https://youtu.be/vFLot0_tXqQ)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
 3. Under **Monitoring** choose **Metrics**.
@@ -43,6 +48,9 @@ In this exercise you’ll use Metrics to create a readout of available memory, C
 14. Select Line Chart and then choose Grid.
 
 ### Exercise 3.3. Configure Azure Monitor for VM Data Collection Endpoint
+In this exercise you'll create a VM Data Collection Endpoint, which you will use in later exercises for VM telemetry collection. 
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.3 Demo Video](https://youtu.be/z7-OCqY9v7U)
 
 1. In the **Azure Portal Search Bar**, enter **Monitor** and select **Monitor** from the list of results.
 2. In the **Monitor** page, under **Settings**, choose **Data Collection Endpoints**.
@@ -55,8 +63,9 @@ In this exercise you’ll use Metrics to create a readout of available memory, C
 5. Choose **Review + Create** and then choose **Create**. This will create the data collection endpoint that you will use for monitoring IaaS VMs.
 
 ### Exercise 3.4. Configure Azure Monitor for VM Data Collection Rule
-
 In this exercise, you will create a Data Collection Rule to collect a specific set of events from the Windows Server event logs.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.4 Demo Video](https://youtu.be/WNz0H2z3clk)
 
 1. In the **Azure Portal Search Bar**, enter **Monitor** and select **Monitor** from the list of results.
 2. In the **Monitor** page, under **Settings**, choose **Data Collection Rules**.
@@ -81,8 +90,9 @@ In this exercise, you will create a Data Collection Rule to collect a specific s
 12. Choose **Review + Create** and then choose **Create**.
 
 ### Exercise 3.5. Modify VM Data Collection Rule to include IIS Logs
-
 In this exercise, you will modify a Data Collection Rule to collect a specific set of events from the IIS log.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.5 Demo Video](https://youtu.be/SlbgQP8Cy00)
 
 1. In the **Azure Portal Search Bar**, enter **Monitor** and select **Monitor** from the list of results.
 2. In the **Monitor** page, under **Settings**, choose **Data Collection Rules**.
@@ -94,6 +104,9 @@ In this exercise, you will modify a Data Collection Rule to collect a specific s
 8. On the **Destination** page, ensure that the destination of Azure Monitor Logs is the log analytics workspace **LogAnalytics1** is selected and then choose **Add Data Source**.
 
 ### Exercise 3.6. Configure Network Connection Monitor
+In this exercise you'll configure Network Connection Monitor to verify that web applications running in VMs are available.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.6 Demo Video](https://youtu.be/8OPEXAB-Ebg)
 
 1. In the **Azure Portal Search Bar**, enter **Network Watcher** and select **Network Watcher** from the list of results.
 2. Under **Monitoring**, choose **Connection Monitor**.
@@ -121,8 +134,9 @@ In this exercise, you will modify a Data Collection Rule to collect a specific s
 18. Review the results of the log, checking the **TestResult** field. This should indicate (assuming that everything is configured correctly) that the Linux VM can send traffic to port 80 on the Windows Server VM with IIS installed and Port 80 open on the NSG rule.
 
 ### Exercise 3.7. Configure Performance Alerts and Action Groups
-
 In this exercise you will configure a performance alert and an action to occur based on CPU utilization on a Linux IaaS VM.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.7 Demo Video](https://youtu.be/HvPyEmnXcfM)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
