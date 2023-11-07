@@ -9,29 +9,19 @@ In this section you will integrate Azure Monitor into the IaaS VMs SYD-LINUX and
 1. In the Search bar of the Azure Portal, type **Monitor** and then choose **Monitor**.
 2. Under **Insights** choose **Virtual Machines**.
 3. On the **Get Started** page, choose **Configure Insights**.
-4. On the **Overview** page, select the **Not Monitored** page and choose **Enable** next to **SYD-LINUX**
+4. On the **Overview** page, select the **Not Monitored** page and choose **Enable** next to **SYD-WS2022**
 5. On the **Azure Monitor Insights Onboarding** page, choose **Enable**.
 6. On the **Monitoring Configuration** page, ensure that **Azure Monitor Agent** is selected and then choose **Create New** under **Data Collection Rule**.
-7. On the **Create New Rule** page, provide the following information and then choose Create:
-- Data Collection Rule name: **SYDLINUXINSIGHT**
-- Enable processes and dependencies map: **Yes**.
-- Subscription: **Your subscription**.
-- Log Analytics Workspace: **LogAnalytics1**
-8. On the **Monitoring configuration** page choose **Configure**.
-9. Close the **Azure Monitor Insights Onboarding** page.
-10. On the **Overview** page, select the **Not Monitored** page and choose **Enable** next to **SYD-WS2022**
-11. On the **Azure Monitor Insights Onboarding** page, choose **Enable**.
-12. On the **Monitoring Configuration** page, ensure that **Azure Monitor Agent** is selected and then choose **Create New** under **Data Collection Rule**.
-13. On the **Create New Rule** page, provide the following information and then choose **Create**:
+7. On the **Create New Rule** page, provide the following information and then choose **Create**:
 - Data Collection Rule name: **SYDWIN2022INSIGHT**
 - Enable processes and dependencies map: **Yes**.
 - Subscription: **Your subscription**.
 - Log Analytics Workspace: **LogAnalytics1**
-14. On the Monitoring configuration page choose **Configure**.
-15. And then choose **Enable**.
-16. Close the **Monitoring Configuration** page.
-17. Select the **Monitored** column and verify that **SYD-LINUX** and **SYD-WS2022** have **Monitoring Coverage** enabled
-18. With **Virtual Machines** selected under **Insights**, choose the **Performance** tab and review the performance telemetry.
+8. On the Monitoring configuration page choose **Configure**.
+9. And then choose **Enable**.
+10. Close the **Monitoring Configuration** page.
+11. Select the **Monitored** column and verify that **SYD-LINUX** and **SYD-WS2022** have **Monitoring Coverage** enabled
+12. With **Virtual Machines** selected under **Insights**, choose the **Performance** tab and review the performance telemetry.
 
 ### Exercise 3.2. VM Metrics
 
@@ -115,7 +105,7 @@ In this exercise, you will modify a Data Collection Rule to collect a specific s
 5. On the **Add Test Group** details page, enter the **Test Group Name** as **VMTestGroup** and choose **Add Sources**.
 6. On the **Add Sources** page, expand the **InfraVNet** and **InfraSubnetNodes** and enable the **SYD-LINUX** checkbox. Choose **Add Endpoints**.
 7. On the **Add test group** details page, choose **Add Test Configuration**. On the **Add Test Configuration** Page, provide the following details and accept the other defaults:
--  Test Configuration Name: **Default HTTP**
+-  Test Configuration Name: **DefaultHTTP**
 -  Protocol: **HTTP**
 -  Destination Port: **80**
 8. Choose **Add Test Configuration**.
@@ -148,7 +138,8 @@ In this exercise you will configure a performance alert and an action to occur b
 -  Action Group Name: **NotifyCPU**
 -  Display Name: **NotifyCPU**
 9.  On the **Notifications** page, On the **notification type** drop down menu select **Email Azure Resource Manager Role** and set the name as **Email Admin**. Choose the pencil icon under **Selected**. On the **Email Azure Resource Manager Role** page, use the drop down and then select **Owner**. Choose **OK**. Choose **Next: Details**
-10. On the **Details** page, enter the alert rule name **HighCPU**. Choose **Review + Create** and then choose **Create**.
+10. Choose **Review and Create* and then choose **Create**.
+11. On the **Details** page, enter the alert rule name **HighCPU**. Choose **Review + Create** and then choose **Create**.
 
 ===
 Choose Next to go to Section 4
