@@ -8,6 +8,8 @@ This section requires that you have completed section zero.
 
 In this exercise you will configure BitLocker Encryption for the Windows Server IaaS VM and DMCrypt for the Linux VM. To complete this exercise, perform the following steps:
 
+4.1 You can see a quick audio free video showing the lab steps here: [Exercise 4.1 Demo Video](https://youtu.be/F6lG_-qIZx4)
+
 1. From the Azure Portal, open Cloud Shell
 2. Run the following command to list the keyvault name
 
@@ -37,6 +39,10 @@ In this exercise you will configure BitLocker Encryption for the Windows Server 
 +++az vm encryption show --name SYD-LINUX -g InfraResourceGroup -o table+++
 
 ### Exercise 4.2. Configure Azure Software Update and Hotpatch
+
+In this exercise you will configure Azure Software Update and Hotpatch
+
+4.2	You can see a quick audio free video showing the lab steps here: [Exercise 4.2 Demo Video](https://youtu.be/jIcg8lhV8AQ)
 
 1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
