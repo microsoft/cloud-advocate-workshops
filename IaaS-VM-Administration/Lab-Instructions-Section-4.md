@@ -68,5 +68,29 @@ In this exercise you will configure Azure Software Update and Hotpatch
 - Periodic Assessment: **Enable**
 - Hotpatch: **Enable**
 
+### Exercise 4.3. Configure Defender for Cloud Settings
+
+In this exercise you will configure Defender for Cloud settings related to Azure IaaS VMs and view recommendations.
+
+4.2	You can see a quick audio free video showing the lab steps here: [Exercise 4.3 Demo Video](https://youtu.be/EKMbq3Lwz0o)
+
+1. In the Azure Portal Search bar, type **Defender for Cloud** and choose **Defender for Cloud** from the list of results.
+2. In the Defender for Cloud portal, type *Environment settings* in the Search bar and then select *Environment Settings*.
+3. On the Environment Settings page, choose Expand All and navigate down until you see the Azure subscription. It will have a name similar to *ignite-lodXXXXX*. Choose the Azure subscription to open it.
+4. On the **Settings | Defender Plans** page, choose **Settings & Monitoring**.
+5. On the **Settings & Monitoring** page, set **Vulnerability assessment for machines** to On.
+6. On the **Extension Deployment Configuration** page, select **Microsoft Defender Vulnerability Management** and choose **Apply**.
+7. On the **Extension Deployment Configuration** page, set **Guest Configuration Agent** to **On**. Choose **Continue** at the top of the page to apply settings and choose **Save** on the **Settings | Defender Plans** page.
+8. In the Azure Portal Search bar, type **Virtual Machines** and choose **Virtual Machines** from the list of results.
+9. On the list of virtual machines select **SYD-LINUX**.
+10. On the **SYD-LINUX** page type Defender in the search bar and then choose **Defender for Cloud**.
+11. On the list of recommendations for **SYD-LINUX** choose **Machines Should Have A Vulnerability Assessment Solution** if it is available. If this option is not available, continue on at Step 14.
+12. On the **Machines Should Have A Vulnerability Assessment Solution** page, choose **Fix**.
+13. On the **Choose A Vulnerability Assessment Solution** page, choose **Microsoft Defender Vulnerability Management** and choose **Proceed** and then choose **Fix 1 resource**.
+14. In the Azure Portal Search bar, type **Virtual Machines** and choose **Virtual Machines** from the list of results.
+15. In the list of virtual machines, choose **SYD-WS2022**.
+16. On the **SYD-WS2022** page type Defender in the search bar and then choose **Defender for Cloud**.
+17. On the **SYD-WS2022 | Defender for Cloud** page, review the recommendations and then choose **View Additional Recommendations in Defender for Cloud**.
+18. Review the additional information in Defender for Cloud related to the security of SYD-WS2022.
 ===
 Choose Next to go to Section 5

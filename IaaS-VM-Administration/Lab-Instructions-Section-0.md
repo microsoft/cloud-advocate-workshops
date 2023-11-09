@@ -11,7 +11,7 @@ This exercise allows you to verify that all lab assets have deployed correctly. 
 
 To verify that the lab resources have deployed completely, perform the following steps:
 
-1. When logged on to the VM you will use to connect to the lab instance, open Edge and log on to the Azure portal at portal.azure.com and using the username and passwords present on the green lab sidebar. You can click on the **[T]** icon to have sidebar text automatically typed into the VM window. (If the VM doesn’t have network connectivity, just reboot from the Start menu whilst connected through the remote web connection).
+1. When logged on to the VM you will use to connect to the lab instance, open Edge and log on to the Azure portal at +++portal.azure.com+++ and using the username and passwords present on the green lab sidebar. You can click on the **[T]** icon to have sidebar text automatically typed into the VM window. (If the VM doesn’t have network connectivity, just reboot from the Start menu whilst connected through the remote web connection).
 2. In the top bar next to the text entry area, select the Cloud Shell icon.
 3. When prompted by the Welcome to Azure Cloud Shell page, choose Bash.
 4. Accept the default information about storage and choose **Create Storage** (this is necessary to use Cloud Shell in later exercises).
@@ -46,7 +46,7 @@ The Microsoft Insights resource provider is required to use the VM Insights func
 
 In this exercise you’ll enable Defender for Cloud licenses to allow for functionality that will be used throughout the rest of the lab, such as Just In Time Access used when configuring Windows Admin Center. This exercise is a prerequisite for exercise 2.2 and all exercises in section four. You may need to refresh Defender for Cloud as it can take some time to make licenses available.
 
-1. In the Azure Portal, type Defender for Cloud in the Search Bar and then select Defender for Cloud.
+1. Open a new tab and navigate to the azure portal at +++portal.azure.com+++. In the Azure Portal, type Defender for Cloud in the Search Bar and then select Defender for Cloud.
 2. In the Defender for Cloud portal, choose Environment Settings.
 3. On the Environment Settings page, choose Expand All.
 4. At the bottom of expanded the list, choose the subscription which will have a name like build23-lodXXXXX. If this is listed as Unregistered, click Refresh and then click on the build23-lodXXXXX item.
@@ -56,6 +56,7 @@ In this exercise you’ll enable Defender for Cloud licenses to allow for functi
 8. Next to Key Vault under Cloud Workload Protection (CWP) set the slider to On.
 9. Next to Resource Manager under Cloud Workload Protection (CWP) set the slider to On.
 10. Select Save at the top under Defender Plans.
+11. Keep this tab open until the plan settings save and then close it. You can proceed with the next steps.
 
 ===
 Choose Next to go to Section 1
