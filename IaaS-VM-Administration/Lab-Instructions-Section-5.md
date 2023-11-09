@@ -15,7 +15,7 @@ As you have enabled automanage in Exercise 2.3, the Windwos Server IaaS VM is al
 3. On the SYD-WS2022 page, note that backup is already configured by automanage but that the initial backup is pending and hasn’t been completed. Choose **Backup Now**.
 4. On the **Backup Now** page, accept the default backup retention option and choose **OK**.
 
-### Exercise 5.2: Configure Azure Size Recovery
+### Exercise 5.2: Configure Azure Site Recovery
 
 Azure Site Recovery allows you to failover a virtual machine from one Azure region to another. In this exercise you'll configure replication for an encrypted virtual machine from one region to another.
 

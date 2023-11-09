@@ -1,0 +1,30 @@
+##Demo Video List
+
+List of demos hosted in video folder of IaaS VM Administraiton Workshop
+
+IaaS-VM-Lab-Exercise-1-1.mp4    #Video of VM network configuration
+IaaS-VM-Lab-Exercise-1-2.mp4    #Video of Network security groups
+IaaS-VM-Lab-Exercise-1-3.mp4    #Video of adding disks to VMs
+IaaS-VM-Lab-Exercise-1-4.mp4    #Video of resizing VM
+IaaS-VM-Lab-Exercise-2-1.mp4    #Video of enabling boot diagnostics
+IaaS-VM-Lab-Exercise-2-2.mp4    #Video of using Windows Admin Center for IaaS VM admin
+IaaS-VM-Lab-Exercise-2-3.mp4    #Video of Configure automanage for WS2022 VM
+IaaS-VM-Lab-Exercise-2-4.mp4    #Video of Azure Policy for IaaS VM
+IaaS-VM-Lab-Exercise-2-5.mp4    #Video of Serial Connection to IaaS VMs
+IaaS-VM-Lab-Exercise-3-1.mp4    #Video of Configuring VM Insights for WS 2022
+IaaS-VM-Lab-Exercise-3-2.mp4    #Video of VM Metrics for IaaS VMs
+IaaS-VM-Lab-Exercise-3-3.mp4    #Video of Configure data collection endpoint
+IaaS-VM-Lab-Exercise-3-4.mp4    #Video of Azure Monitor for Windows Server Log collection
+IaaS-VM-Lab-Exercise-3-5.mp4    #Video of Adding IIS Logs to Azure Monitor
+IaaS-VM-Lab-Exercise-3-6.mp4    #Video of Network connection monitor
+IaaS-VM-Lab-Exercise-3-7.mp4    #Video of Performance Alerts and Action Groups
+IaaS-VM-Lab-Exercise-4-1.mp4    #Video of BitLocker Encryption and DMCrypt
+IaaS-VM-Lab-Exercise-4-2.mp4    #Video of Azure Software Update and Hotpatch
+IaaS-VM-Lab-Exercise-4-3.mp4    #Video of Defender for Cloud Settings
+IaaS-VM-Lab-Exercise-5-1.mp4    #Video of Virtual Machine Backup
+IaaS-VM-Lab-Exercise-5-2.mp4    #Video of Virtual Machine Disaster Recovery
+IaaS-VM-Lab-Extra-Automanage-Linux.mp4 #Video for Linux Automanage demo
+IaaS-VM-Lab-Extra-Change-Tracking-Linux.mp4 #Video for Linux Change Tracking demo
+IaaS-VM-Lab-Extra-Linux-Backup-Restore.mp4 #Video for Linux Backup and Restore demo
+IaaS-VM-Lab-Exercise-Zero.mp4       #This is the video for exercise verifying lab configuration
+
