@@ -81,11 +81,11 @@ You can see a quick audio free video showing the lab steps here: [Exercise 2.2 D
 
 32. To view the configured IP address settings, type the following command and press Enter:
 
-+++Get-NetIPAddress+++
+**Get-NetIPAddress**
 
 33. Verify that Deduplication has installed by running the following command:
 
-+++Get-WindowsFeature FS-Data-Deduplication+++
+**Get-WindowsFeature FS-Data-Deduplication**
 
 34. Choose Disconnect under Remote Desktop to end the Remote Desktop Session.
 35. On the Windows Admin Center Tools menu, choose Processes. This will allow you to see the processes that are currently running on SYD-WS2022. Locate the HotPatch process. This process is new to the Azure Edition of Windows Server 2022. You will learn more about HotPatch later in this lab.
@@ -173,7 +173,7 @@ You can see a quick audio free video showing the lab steps here: [Exercise 2.5 D
 - Password: **P@ssw0rdP@ssw0rd**
 5.  Type the following command to see information about your login
 
-+++w \$(whoami)+++
+**w \$(whoami)**
 
 6. Type the following to verify that SYD-LINUX has network connectivity.
 
