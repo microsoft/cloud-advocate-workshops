@@ -173,7 +173,7 @@ You can see a quick audio free video showing the lab steps here: [Exercise 2.5 D
 - Password: **P@ssw0rdP@ssw0rd**
 5.  Type the following command to see information about your login
 
-**w \$(whoami)**
+**w $(whoami)**
 
 6. Type the following to verify that SYD-LINUX has network connectivity.
 
