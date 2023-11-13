@@ -13,7 +13,7 @@ In this exercise you will configure BitLocker Encryption for the Windows Server 
 1. From the Azure Portal, open Cloud Shell
 2. Run the following command to list the keyvault name
 
-+++Az keyvault list --output table+++
++++az keyvault list --output table+++
 
 3. A name will be returned that will be in the format **IaaSVMKVxxxxxxxxx** where the string of xxxxxxx represents a number. Make note of this name (and perhaps post it into Notepad for later use) as you’ll need to substitute it into commands in step 5 and step 7. You might also select it and copy it so that you can paste it into those commands using SHIFT-INS in step 5 and step 7.
 4. Type the following commands to verify that VM disk encryption is currently not enabled
