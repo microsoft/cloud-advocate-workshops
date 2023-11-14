@@ -4,23 +4,24 @@ In this workshop you’re going to learn about Azure’s IaaS VM supporting tech
 
 ## Section Zero: Lab Deployment
 
-Lab Deployment
+This exercise allows you to verify that all lab assets have deployed correctly. You can see a quick audio free video showing the lab steps here: [Exercise Zero Demo Video](https://youtu.be/2uwsyEMZxIY)
+ 
 
 ### Exercise 0.1. Verify Lab Deployment
 
 To verify that the lab resources have deployed completely, perform the following steps:
 
-1. When logged on to the VM you will use to connect to the lab instance, open Edge and log on to the Azure portal at portal.azure.com and using the username and passwords present on the green lab sidebar. You can click on the **[T]** icon to have sidebar text automatically typed into the VM window. (If the VM doesn’t have network connectivity, just reboot from the Start menu whilst connected through the remote web connection).
+1. When logged on to the VM you will use to connect to the lab instance, open Edge and log on to the Azure portal at **portal.azure.com** and using the username and passwords present on the green lab sidebar. You can click on the **[T]** icon to have sidebar text automatically typed into the VM window. (If the VM doesn’t have network connectivity, just reboot from the Start menu whilst connected through the remote web connection).
 2. In the top bar next to the text entry area, select the Cloud Shell icon.
 3. When prompted by the Welcome to Azure Cloud Shell page, choose Bash.
 4. Accept the default information about storage and choose **Create Storage** (this is necessary to use Cloud Shell in later exercises).
 5. Enter the following command to view the list of resources in the resource group:
 
-+++az resource list --resource-group InfraResourceGroup --output table+++
+**az resource list --resource-group InfraResourceGroup --output table**
 
 6.  Type the following command to exit Cloud Shell
 
-+++Exit+++
+**Exit**
 
 7. Choose **Quit** to close the Cloud Shell pane.
 8. In the Search bar of the Azure Portal, type **Resource Groups** and select **Resource Groups**.
@@ -45,7 +46,7 @@ The Microsoft Insights resource provider is required to use the VM Insights func
 
 In this exercise you’ll enable Defender for Cloud licenses to allow for functionality that will be used throughout the rest of the lab, such as Just In Time Access used when configuring Windows Admin Center. This exercise is a prerequisite for exercise 2.2 and all exercises in section four. You may need to refresh Defender for Cloud as it can take some time to make licenses available.
 
-1. In the Azure Portal, type Defender for Cloud in the Search Bar and then select Defender for Cloud.
+1. Open a new tab and navigate to the azure portal at **portal.azure.com**. In the Azure Portal, type Defender for Cloud in the Search Bar and then select Defender for Cloud.
 2. In the Defender for Cloud portal, choose Environment Settings.
 3. On the Environment Settings page, choose Expand All.
 4. At the bottom of expanded the list, choose the subscription which will have a name like build23-lodXXXXX. If this is listed as Unregistered, click Refresh and then click on the build23-lodXXXXX item.
@@ -55,8 +56,11 @@ In this exercise you’ll enable Defender for Cloud licenses to allow for functi
 8. Next to Key Vault under Cloud Workload Protection (CWP) set the slider to On.
 9. Next to Resource Manager under Cloud Workload Protection (CWP) set the slider to On.
 10. Select Save at the top under Defender Plans.
+11. Keep this tab open until the plan settings save and then close it. You can proceed with the next steps.
 
 ===
+# Optimizing Virtual Machine Workloads on Azure.
+
 
 ## Section One: Azure as IaaS VM Fabric
 
@@ -64,7 +68,9 @@ In this section you will use tools outside the VM to manage the configuration of
 
 ### Exercise 1.1. Manage VM Network Configuration
 
-In this section, you will perform manual configuration of an IaaS VM’s network settings. Unlike a normal virtual machine where you would edit IP address information from within the virtual machine using the operating system tools, the only way you can modify IP address settings for an Azure IaaS VM is by editing the properties of the network adapter from the Azure management plane. Some network address modifications require that the Azure IaaS VM be restarted.
+In this section, you will perform manual configuration of an IaaS VM’s network settings. Unlike a normal virtual machine where you would edit IP address information from within the virtual machine using the operating system tools, the only way you can modify IP address settings for an Azure IaaS VM is by editing the properties of the network adapter from the Azure management plane. Some network address modifications require that the Azure IaaS VM be restarted. If the process appears to be frozen after 5 or more minutes, consider stopping and then restarting SYD-WS2022.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 1.1 Demo Video](https://youtu.be/vgOJi4T_11k)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
 2. In the SYD-WS2022 page, choose Network Settings under Networking.
@@ -87,6 +93,8 @@ In this section, you will perform manual configuration of an IaaS VM’s network
 
 In this section of the exercise, you will manage the Network Security Group assigned to the IaaS VM network adapter. This network security group functions as a packet filter at the network adapter level. In this exercise you are going to create an inbound rule for port 80, so that you’ll be able to contact the web server that you’ll install on the Windows Server virtual machine.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 1.2 Demo Video](https://youtu.be/2v3SPyJg2UA)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
 2. In the **SYD-WS2022** page, choose **Network settings** under **Networking** (*Search for Networking if you cannot find it*).
 3. On the **Networking** page, choose **Create Port Rule** (*or Add inbound port rule*) and then choose **Inbound port rule**.
@@ -105,7 +113,7 @@ In this section of the exercise, you will manage the Network Security Group assi
 7. On the **Run Command** page, choose **RunPowerShellScript**
 8. In the **Run Command Script** dialog, type the following and choose **Run**.
 
-+++Install-windowsfeature -name Web-Server -includeallsubfeature+++
+**Install-windowsfeature -name Web-Server -includeallsubfeature**
 
 9.  Wait until you receive the status of **Success** in the Output page. An informational message will inform you that script execution is in progress. This may take up to 15 minutes.
 10. On the SYD-WS2022 return to **Overview** at the top of the item list.
@@ -131,13 +139,13 @@ In this section of the exercise, you will manage the Network Security Group assi
 21. After a few moments the Cloud Shell windows opens. Review the message and type **yes** and press Enter. If you get a token error involving time, restart the browser and return to step 31.
 22. Enter the following commands to update the VM.
 
-+++Sudo apt update && sudo apt upgrade -y+++
+**sudo apt update && sudo apt upgrade -y**
 
-23. If you are prompted by a Newer Kernel Available message, press **Tab** to select **OK** and press **Enter**. After this has occurred (or if it does not occur), enter the following to install ngingx.
+23. If you are prompted by a Newer Kernel Available message or needing to restart the service due to outdated libraries, press **Tab** to select **OK** and press **Enter**. After this has occurred (or if it does not occur), enter the following to install ngingx.
 
-+++Sudo apt install nginx -y+++
+**sudo apt install nginx -y**
 
-24. Press **Tab** and select **OK** and press **Enter** if prompted about a pending Kernel upgrade.
+24. Press **Tab** and select **OK** and press **Enter** if prompted about a pending Kernel upgrade or if you need to restart a service due to outdated libraries.
 25. Type **exit** twice and select **Quit** to close the cloud shell connection to SYD-LINUX.
 26. On the SYD-LINUX tools menu select **Overview** at the top of the item list.
 27. On the Overview page, under **Networking**, copy the **public IP address** into a new browser tab and press **Enter**. Make a note of this public IP address using Notepad in the lab VM as you will use it later in the exercise.
@@ -146,6 +154,8 @@ In this section of the exercise, you will manage the Network Security Group assi
 ### Exercise 1.3. Add disks to an IaaS VMs
 
 In this exercise, you will add a disk to an IaaS VM running Ubuntu, connect to the VM using SSH from CloudShell, format the newly added disk and then mount it.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 1.3 Demo Video](https://youtu.be/sBeJlHAeTyk)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
@@ -164,25 +174,25 @@ In this exercise, you will add a disk to an IaaS VM running Ubuntu, connect to t
 9. After a few moments the Cloud Shell windows opens. Review the message and type **yes** and press Enter.
 10. When signed in through SSH to the Linux machine at the Cloud Shell prompt, type the following command to list all the storage attached to the Linux IaaS VM taking note of the item sdc.
 
-+++lsblk+++
+**lsblk**
 
 11. Format the disk with ext4 by running the following command
 
-+++Sudo mkfs.ext4 /dev/sdc+++
+**sudo mkfs.ext4 /dev/sdc**
 
 12. Create a folder to mount the disk
 
-+++Sudo mkdir /mnt/newdisk+++
+**sudo mkdir /mnt/newdisk**
 
 13. Mount the disk in the new folder
 
-+++Sudo mount -t ext4 /dev/sdc /mnt/newdisk+++
+**sudo mount -t ext4 /dev/sdc /mnt/newdisk**
 
 14. Verify that the disk is mounted by running the following commands
 
-+++Lsblk+++
+**lsblk**
 
-+++df+++
+**df**
 
 15. If prompted to restart services choose **OK**
 16. Enter the command **exit** twice to sign out and exit the Cloud Shell SSH session and then choose **Quit** to close the Cloud Shell pane.
@@ -204,10 +214,16 @@ In this exercise, you will add a disk to an IaaS VM running Ubuntu, connect to t
 
 In this exercise you will resize a VM running Linux from the Azure Portal.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 1.4 Demo Video](https://youtu.be/tWNp0Mfb9MM)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-LINUX**.
 2. Under **Settings** choose **Size**. You can also search for Size on the search bar at the top of the SYD-LINUX tools page.
 3. On the list of VM sizes, search for and choose **D4s_v3** and then choose **Resize**.
 4. After the operation completes (may take up to 15 minutes), select the **Overview** item and verify that the VM is now of the **Standard D4s_v3** size and has **4 vcpus** and **16 GiB** of memory.
+
+===
+
+# Optimizing Virtual Machine Workloads on Azure.
 
 ## Section Two: Manage IaaS VM Configuration
 
@@ -216,6 +232,8 @@ Section two only requires that you have performed section zero and the parts of 
 ### Exercise 2.1. Enable Boot Diagnostics
 
 In this exercise, you will enable boot diagnostics on Azure IaaS Virtual Machines.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 2.1 Demo Video](https://youtu.be/I8XbtRHL7k0)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-WS2022**.
@@ -239,6 +257,8 @@ In this exercise, you will enable boot diagnostics on Azure IaaS Virtual Machine
 ### Exercise 2.2. Configure and administer Windows Server with Windows Admin Center
 
 In this exercise, you will configure a Windows Server IaaS VM to be managed from the Azure portal using Windows Admin Center.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 2.2 Demo Video](https://youtu.be/k6gFW-mnJKk)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-WS2022**.
@@ -282,15 +302,15 @@ In this exercise, you will configure a Windows Server IaaS VM to be managed from
 29. You will be connected to a Remote Desktop session over the browser and the Windows Server Desktop Experience will be displayed. Click **Cancel** to Dismiss the Shutdown Event Tracker dialog box (this will be present due to reboots from earlier exercises). If you have performed this part of the lab after section 1, Internet Information Services will be shown as a node in Server Manager.
 30. Through the web based Remote Desktop session, right click on the Start hint and choose **Windows PowerShell (Admin)**
 31. At the PowerShell prompt type the following command and press Enter to view the computer name:
-+++Hostname+++
+**Hostname**
 
 32. To view the configured IP address settings, type the following command and press Enter:
 
-+++Get-NetIPAddress+++
+**Get-NetIPAddress**
 
 33. Verify that Deduplication has installed by running the following command:
 
-+++Get-WindowsFeature FS-Data-Deduplication+++
+**Get-WindowsFeature FS-Data-Deduplication**
 
 34. Choose Disconnect under Remote Desktop to end the Remote Desktop Session.
 35. On the Windows Admin Center Tools menu, choose Processes. This will allow you to see the processes that are currently running on SYD-WS2022. Locate the HotPatch process. This process is new to the Azure Edition of Windows Server 2022. You will learn more about HotPatch later in this lab.
@@ -306,6 +326,8 @@ In this exercise, you will configure a Windows Server IaaS VM to be managed from
 ### Exercise 2.3. Configure Automanage for Azure VM
 
 In this exercise you will configure Automanage for SYD-WS2022. Automanage allows you to automatically configure a number of Azure IaaS services that support Azure VMs without having to configure each on and individual basis.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 2.3 Demo Video](https://youtu.be/biEZMJLXvdY)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-WS2022**.
@@ -341,6 +363,8 @@ In this exercise you will configure Automanage for SYD-WS2022. Automanage allows
 
 In this exercise you will use Azure Policy to evaluate several elements of the configuration of IaaS VMs. Policy can be a useful tool to allow you to determine if your IaaS VMs are configured correctly or require manual or automatic remediation.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 2.4 Demo Video](https://youtu.be/1HG6jmKDoE4)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
 3. On the SYD-LINUX page, select **Policies** under **Operations**.
@@ -364,6 +388,8 @@ In this exercise you will use Azure Policy to evaluate several elements of the c
 
 The serial console connection allows you to make a special administrative connection to an IaaS VM when there may be some sort of fault with the network configuration. Serial Console allows you to perform actions against the VM from a command line environment even if the network connection doesn’t work. You can use this for troubleshooting or diagnosis purposes. You can make serial console connections to Linux IaaS VMs and Windows Server IaaS VMs.
 
+You can see a quick audio free video showing the lab steps here: [Exercise 2.5 Demo Video](https://youtu.be/AXhXpbMrO3M)
+
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
 3. Under Help choose Serial Console.
@@ -372,11 +398,11 @@ The serial console connection allows you to make a special administrative connec
 - Password: **P@ssw0rdP@ssw0rd**
 5.  Type the following command to see information about your login
 
-+++w \$(whoami)+++
+**w $(whoami)**
 
 6. Type the following to verify that SYD-LINUX has network connectivity.
 
-+++ping www.azure.com+++
+**ping www.azure.com**
 
 7. Use **CTRL-C** to stop the output of the ping command.
 8. Type **exit** to sign off from the serial console connection to the Linux IaaS VM.
@@ -389,7 +415,7 @@ The serial console connection allows you to make a special administrative connec
 15. The message will return that a new channel named Cmd001 has ben created.
 16. At the SAC\> prompt, type
 
-+++ch -sn Cmd0001+++
+**ch -sn Cmd0001**
 
 17. Press Enter to view the channel. You will be prompted to log on to the computer. Provide the following credentials:
 
@@ -401,11 +427,11 @@ The serial console connection allows you to make a special administrative connec
 
 13. You will be presented with the Windows Server command prompt. Type the following command to verify network connectivity:
 
-+++Ping www.azure.com+++
+**Ping www.azure.com**
 
 14. Type sconfig to load the Windows Server command line configuration utility
 
-+++sconfig+++
+**sconfig**
 
 15. On the sconfig menu, type **8** to view the network settings.
 16. Type the number associated with the network adapter (it will be 1 or 2).
@@ -415,42 +441,40 @@ The serial console connection allows you to make a special administrative connec
 20. On the **SYD-WS2022** page Under **Help** choose **Boot Diagnostics** and then choose **Serial log**.
 21. You should see a log record of the commands you issued when connected via the Serial connection.
 
+===
+# Optimizing Virtual Machine Workloads on Azure.
+
 ## Section Three: Monitor IaaS VMs
 
 In this section you will integrate Azure Monitor into the IaaS VMs SYD-LINUX and SYD-WS2022.
 
 ### Exercise 3.1. Configure VM Insights
+In this exercise, you will enable VM Insights.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.1 Demo Video](https://youtu.be/PxOlBVGi-jo)
 
 1. In the Search bar of the Azure Portal, type **Monitor** and then choose **Monitor**.
 2. Under **Insights** choose **Virtual Machines**.
 3. On the **Get Started** page, choose **Configure Insights**.
-4. On the **Overview** page, select the **Not Monitored** page and choose **Enable** next to **SYD-LINUX**
+4. On the **Overview** page, select the **Not Monitored** page and choose **Enable** next to **SYD-WS2022**
 5. On the **Azure Monitor Insights Onboarding** page, choose **Enable**.
 6. On the **Monitoring Configuration** page, ensure that **Azure Monitor Agent** is selected and then choose **Create New** under **Data Collection Rule**.
-7. On the **Create New Rule** page, provide the following information and then choose Create:
-- Data Collection Rule name: **SYDLINUXINSIGHT**
-- Enable processes and dependencies map: **Yes**.
-- Subscription: **Your subscription**.
-- Log Analytics Workspace: **LogAnalytics1**
-8. On the **Monitoring configuration** page choose **Configure**.
-9. Close the **Azure Monitor Insights Onboarding** page.
-10. On the **Overview** page, select the **Not Monitored** page and choose **Enable** next to **SYD-WS2022**
-11. On the **Azure Monitor Insights Onboarding** page, choose **Enable**.
-12. On the **Monitoring Configuration** page, ensure that **Azure Monitor Agent** is selected and then choose **Create New** under **Data Collection Rule**.
-13. On the **Create New Rule** page, provide the following information and then choose **Create**:
+7. On the **Create New Rule** page, provide the following information and then choose **Create**:
 - Data Collection Rule name: **SYDWIN2022INSIGHT**
 - Enable processes and dependencies map: **Yes**.
 - Subscription: **Your subscription**.
 - Log Analytics Workspace: **LogAnalytics1**
-14. On the Monitoring configuration page choose **Configure**.
-15. And then choose **Enable**.
-16. Close the **Monitoring Configuration** page.
-17. Select the **Monitored** column and verify that **SYD-LINUX** and **SYD-WS2022** have **Monitoring Coverage** enabled
-18. With **Virtual Machines** selected under **Insights**, choose the **Performance** tab and review the performance telemetry.
+8. On the Monitoring configuration page choose **Configure**.
+9. And then choose **Enable**.
+10. Close the **Monitoring Configuration** page.
+11. Select the **Monitored** column and verify that **SYD-LINUX** and **SYD-WS2022** have **Monitoring Coverage** enabled
+12. With **Virtual Machines** selected under **Insights**, choose the **Performance** tab and review the performance telemetry.
 
 ### Exercise 3.2. VM Metrics
 
 In this exercise you’ll use Metrics to create a readout of available memory, CPU utilization and Network Out total for each IaaS VM.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.2 Demo Video](https://youtu.be/vFLot0_tXqQ)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
@@ -468,6 +492,9 @@ In this exercise you’ll use Metrics to create a readout of available memory, C
 14. Select Line Chart and then choose Grid.
 
 ### Exercise 3.3. Configure Azure Monitor for VM Data Collection Endpoint
+In this exercise you'll create a VM Data Collection Endpoint, which you will use in later exercises for VM telemetry collection. 
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.3 Demo Video](https://youtu.be/z7-OCqY9v7U)
 
 1. In the **Azure Portal Search Bar**, enter **Monitor** and select **Monitor** from the list of results.
 2. In the **Monitor** page, under **Settings**, choose **Data Collection Endpoints**.
@@ -480,8 +507,9 @@ In this exercise you’ll use Metrics to create a readout of available memory, C
 5. Choose **Review + Create** and then choose **Create**. This will create the data collection endpoint that you will use for monitoring IaaS VMs.
 
 ### Exercise 3.4. Configure Azure Monitor for VM Data Collection Rule
-
 In this exercise, you will create a Data Collection Rule to collect a specific set of events from the Windows Server event logs.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.4 Demo Video](https://youtu.be/WNz0H2z3clk)
 
 1. In the **Azure Portal Search Bar**, enter **Monitor** and select **Monitor** from the list of results.
 2. In the **Monitor** page, under **Settings**, choose **Data Collection Rules**.
@@ -506,8 +534,9 @@ In this exercise, you will create a Data Collection Rule to collect a specific s
 12. Choose **Review + Create** and then choose **Create**.
 
 ### Exercise 3.5. Modify VM Data Collection Rule to include IIS Logs
-
 In this exercise, you will modify a Data Collection Rule to collect a specific set of events from the IIS log.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.5 Demo Video](https://youtu.be/SlbgQP8Cy00)
 
 1. In the **Azure Portal Search Bar**, enter **Monitor** and select **Monitor** from the list of results.
 2. In the **Monitor** page, under **Settings**, choose **Data Collection Rules**.
@@ -519,6 +548,9 @@ In this exercise, you will modify a Data Collection Rule to collect a specific s
 8. On the **Destination** page, ensure that the destination of Azure Monitor Logs is the log analytics workspace **LogAnalytics1** is selected and then choose **Add Data Source**.
 
 ### Exercise 3.6. Configure Network Connection Monitor
+In this exercise you'll configure Network Connection Monitor to verify that web applications running in VMs are available.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.6 Demo Video](https://youtu.be/8OPEXAB-Ebg)
 
 1. In the **Azure Portal Search Bar**, enter **Network Watcher** and select **Network Watcher** from the list of results.
 2. Under **Monitoring**, choose **Connection Monitor**.
@@ -530,7 +562,7 @@ In this exercise, you will modify a Data Collection Rule to collect a specific s
 5. On the **Add Test Group** details page, enter the **Test Group Name** as **VMTestGroup** and choose **Add Sources**.
 6. On the **Add Sources** page, expand the **InfraVNet** and **InfraSubnetNodes** and enable the **SYD-LINUX** checkbox. Choose **Add Endpoints**.
 7. On the **Add test group** details page, choose **Add Test Configuration**. On the **Add Test Configuration** Page, provide the following details and accept the other defaults:
--  Test Configuration Name: **Default HTTP**
+-  Test Configuration Name: **DefaultHTTP**
 -  Protocol: **HTTP**
 -  Destination Port: **80**
 8. Choose **Add Test Configuration**.
@@ -546,8 +578,9 @@ In this exercise, you will modify a Data Collection Rule to collect a specific s
 18. Review the results of the log, checking the **TestResult** field. This should indicate (assuming that everything is configured correctly) that the Linux VM can send traffic to port 80 on the Windows Server VM with IIS installed and Port 80 open on the NSG rule.
 
 ### Exercise 3.7. Configure Performance Alerts and Action Groups
-
 In this exercise you will configure a performance alert and an action to occur based on CPU utilization on a Linux IaaS VM.
+
+You can see a quick audio free video showing the lab steps here: [Exercise 3.7 Demo Video](https://youtu.be/HvPyEmnXcfM)
 
 1. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
@@ -563,158 +596,132 @@ In this exercise you will configure a performance alert and an action to occur b
 -  Action Group Name: **NotifyCPU**
 -  Display Name: **NotifyCPU**
 9.  On the **Notifications** page, On the **notification type** drop down menu select **Email Azure Resource Manager Role** and set the name as **Email Admin**. Choose the pencil icon under **Selected**. On the **Email Azure Resource Manager Role** page, use the drop down and then select **Owner**. Choose **OK**. Choose **Next: Details**
-10. On the **Details** page, enter the alert rule name **HighCPU**. Choose **Review + Create** and then choose **Create**.
+10. Choose **Review and Create* and then choose **Create**.
+11. On the **Details** page, enter the alert rule name **HighCPU**. Choose **Review + Create** and then choose **Create**.
 
+===
 ## Section Four: IaaS VM Security
 
 This section requires that you have completed section zero.
 
-### Exercise 4.1. VM Vulnerability Assessment and Just In Time access
-
-[As this takes some time to become available, it may be that Exercise 4.1 needs to be skipped of VMs aren’t present in the Vulnerability Assessment sections and the JiT sections. To give this more time to become available, workshop attendees may choose to return to exercise 4.1 after they have completed section 5]
-
-1. In the **Azure Portal search bar**, type **Defender for Cloud** and select **Defender for Cloud**.
-2. On the **Defender for Cloud** menu, select **Workload Protections** under **Cloud Security**.
-3. Under **Advanced Protection** choose **VM vulnerability assessment**.
-4. On the **Machines should have vulnerability assessment solution** under **Affected resources**, select the checkboxes next to **syd-ws2022** and **syd-linux** and then choose **Fix**.
-5. On the **Choose a vulnerability assessment solution** page, select **Microsoft Defender vulnerability Management** and choose **Proceed**.
-6. On the **Fixing Resources** page, choose **Fix 2 resources**. Monitor the notification to verify remediation. This remediation will take several minutes to appear in the portal.
-7. In the **Azure Portal** search bar, type **Defender for Cloud** and select **Defender for Cloud**.
-8. On the **Defender for Cloud** menu, select **Workload Protections** under **Cloud Security**.
-9. On the **Workload Protections** page, under **Advanced Protection**, choose **Just-In-Time VM Access**.
-10. On the **Just-in-time VM access** page, you may see **SYD-WS2022** listed as you configured this setting indirectly when you configured Windows Admin Center. Select the **Not Configured** page and then select the checkbox next to **SYD-LINUX** (and SYD-WS2022 if it is not **present**). Chose **Enable JIT** on 1 (or 2) VMs.
-11. On the **JIT VM Access Configuration** page, choose **Save**. Return to the **Configured** tab to verify that Just-in-time VM access is **enabled** for both **SYD-WS2022** and **SYD-LINUX**.
-12. In the **Search bar of the Azure Portal**, type **Virtual Machines** and then choose **Virtual Machines**.
-13. In the list of virtual machines, select **SYD-LINUX**.
-14. Under **Connect** choose **Select** under **SSH using Azure CLI** and then enable the **I understand just-in-time policy** checkbox and select **Configure + Connect**.
-15. Verify that you are able to make an SSH connection using Cloud Shell to SYD-LINUX. Once the connection is established, exit the connection by typing exit to close Cloud Shell. 
-16. In the **Azure Portal search bar**, type **Defender for Cloud** and select **Defender for Cloud**.
-17. On the **Defender for Cloud** menu, select **Workload Protections** under Cloud Security.
-18. On the **Workload Protections** page, under **Advanced Protection**, choose **Just-In-Time VM Access**.
-19. On the **Configured VMs** list, you will see the port 22 request for SYD-LINUX used by the account you used to connect to the Linux VM. Now that JiT is configured, all administrative connections will need to be requested and will be logged.
-20. On the **Defender for Cloud** menu, select **Workload Protections** under **Cloud Security**.
-21. On the **Workload Protections** page, under **Advanced Protection**, choose **Adaptive Network Hardening**.
-22. On the **Adaptive Network Hardening** recommendations, choose the **Healthy Resources** tab. Both virtual machines will be listed here. Recommendations for these VMs based on analyzed traffic patterns.
-
-### Exercise 4.2. Configure BitLocker Encryption and DMCrypt
+### Exercise 4.1. Configure BitLocker Encryption and DMCrypt
 
 In this exercise you will configure BitLocker Encryption for the Windows Server IaaS VM and DMCrypt for the Linux VM. To complete this exercise, perform the following steps:
+
+4.1 You can see a quick audio free video showing the lab steps here: [Exercise 4.1 Demo Video](https://youtu.be/F6lG_-qIZx4)
 
 1. From the Azure Portal, open Cloud Shell
 2. Run the following command to list the keyvault name
 
-+++Az keyvault list --output table+++
+**az keyvault list --output table**
 
 3. A name will be returned that will be in the format **IaaSVMKVxxxxxxxxx** where the string of xxxxxxx represents a number. Make note of this name (and perhaps post it into Notepad for later use) as you’ll need to substitute it into commands in step 5 and step 7. You might also select it and copy it so that you can paste it into those commands using SHIFT-INS in step 5 and step 7.
 4. Type the following commands to verify that VM disk encryption is currently not enabled
 
-+++az vm encryption show --name SYD-WS2022 -g InfraResourceGroup+++
-+++az vm encryption show --name SYD-LINUX -g InfraResourceGroup+++
+**az vm encryption show --name SYD-WS2022 -g InfraResourceGroup**
+
+**az vm encryption show --name SYD-LINUX -g InfraResourceGroup**
 
 5. Enable BitLocker encryption on the Windows Server IaaS VM with the following command (changing the name of the Key Vault to match the one in your lab environment):
 
-+++az vm encryption enable -g InfraResourceGroup --name SYD-WS2022 --disk-encryption-keyvault IaaSVMKVxxxxx+++
+**az vm encryption enable -g InfraResourceGroup --name SYD-WS2022 --disk-encryption-keyvault IaaSVMKVxxxxx**
 
 6. Verify that the VM is encrypted by running the following command (changing the name of the Key Vault to match the one in your lab environment):
 
-+++az vm encryption show --name SYD-WS2022 -g InfraResourceGroup -o table+++
+**az vm encryption show --name SYD-WS2022 -g InfraResourceGroup -o table**
 
 7. Enable DM-Crypt encryption on the Linux IaaS VM with the following command (changing the name of the Key Vault to match the one in your lab environment):
 
-+++az vm encryption enable -g InfraResourceGroup --name SYD-LINUX --disk-encryption-keyvault IaaSVMKVxxxxx --volume-type ALL+++
+**az vm encryption enable -g InfraResourceGroup --name SYD-LINUX --disk-encryption-keyvault IaaSVMKVxxxxx --volume-type ALL**
 
 8. Verify that the VM is encrypted by running the following command:
 
-+++az vm encryption show --name SYD-LINUX -g InfraResourceGroup -o table+++
+**az vm encryption show --name SYD-LINUX -g InfraResourceGroup -o table**
 
-### Exercise 4.3. Configure Azure Software Update and Hotpatch
+### Exercise 4.2. Configure Azure Software Update and Hotpatch
+
+In this exercise you will configure Azure Software Update and Hotpatch
+
+4.2	You can see a quick audio free video showing the lab steps here: [Exercise 4.2 Demo Video](https://youtu.be/jIcg8lhV8AQ)
 
 1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**.
 2. In the list of virtual machines, select **SYD-LINUX**.
 3. On the **SYD-LINUX** page, choose **Updates** under **Operations**.
 4. On the **Updates** page, choose **Go to Updates using Azure Update Manager**.
-5. On the **Updates** page, choose **Check for Updates**.
-6. When queried on triggering an assessment, choose **OK**.
-7. After the assessment completes, click **Refresh** to review the total updates available. As you have run package updates on the Linux computer, you may not need to install any updates. If no updates are required, move on to Step 13. If updates are required, choose **One-time update**.
-8. On the **Install one-time updates** page, select **SYD-LINUX** and choose **Next**.
-9. On the **Updates to install** page, review the updates to be installed and choose **Next**.
-10. On the **Reboot Options** page, select **Reboot if required** and choose **Next**.
-11. On the **Review + Install** page, choose **Install**.
-12. On the **Updates** page, choose **History** and then choose **Refresh**. This will display the progress of the update deployment. Wait until the status reaches **Succeeded**. You may have to wait several minutes and select **Refresh** multiple times.
-13. On the SYD-LINUX updates page, choose **Enable Now** next to **Periodic Assessment**.
-14. On the **Change Update Settings page**, set the **Periodic Assessment** drop down to **Enable** and choose **Save**.
-15. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**.
-16. In the list of virtual machines, select **SYD-WS2022**.
-17. On the SYD-WS2022 page, choose **Updates** under **Operations**.
-18. Chose **Go to Updates using Azure Update Manager**.
-19. On the **Updates** page, choose **Check for Updates**.
-20. When prompted whether you want to trigger an assessment, choose **OK**.
-21. When the assessment completes, choose **Refresh**. If no updates are present, move on to Step 29.
-22. Choose **One-Time Update**.
-23. On the **Machines** page of the **Install one-time updates** wizard, select **SYD-WS2022** and choose **Next**.
-24. On the **Updates** page, review the updates to install and choose **Next**.
-25. On the **Reboot Option** page, select **Reboot if required** and choose **Next**.
-26. On the **Review + Install** page, choose **Install**.
-27. On the Updates page, choose **History** and then choose **Refresh**. This will display the progress of the update deployment. Wait until the status reaches **Succeeded**. You may have to wait several minutes and select **Refresh** multiple times.
-28. Choose **Update settings**.
-29. On the Change Update Settings page, configure the following settings and choose **Save**.
+5. On the SYD-LINUX updates page, choose **Enable Now** next to **Periodic Assessment**.
+6. On the **Change Update Settings page**, set the **Periodic Assessment** drop down to **Enable** and choose **Save**.
+7. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**.
+8. In the list of virtual machines, select **SYD-WS2022**.
+9. On the SYD-WS2022 page, choose **Updates** under **Operations**.
+10. Chose **Go to Updates using Azure Update Manager**.
+11. On the **Updates** page, choose **Check for Updates**.
+12. When prompted whether you want to trigger an assessment, choose **OK**.
+13. When the assessment completes, choose **Refresh**. If no updates are present, move on to Step 29.
+14. Choose **One-Time Update**.
+15. On the **Machines** page of the **Install one-time updates** wizard, select **SYD-WS2022** and choose **Next**.
+16. On the **Updates** page, review the updates to install and choose **Next**.
+17. On the **Reboot Option** page, select **Reboot if required** and choose **Next**.
+18. On the **Review + Install** page, choose **Install**.
+19. On the Updates page, choose **History** and then choose **Refresh**. This will display the progress of the update deployment. Wait until the status reaches **Succeeded**. You may have to wait several minutes and select **Refresh** multiple times.
+20. Choose **Update settings**.
+21. On the Change Update Settings page, configure the following settings and choose **Save**.
 - Periodic Assessment: **Enable**
 - Hotpatch: **Enable**
-30. On the SYD-WS2022 **Updates** page, choose **Schedule Updates**.
-31. On the Create a maintenance Configuration Page, configure the following settings and choose **Add a schedule**.
-- Subscription: **Your subscription**
-- Resource Group: **InfraResourceGroup**
-- Configuration Name: **LabUpdateConfig**
-- Region: Your Region (**determined in Exercise 0.1**)
-- Maintenance Scope: **Guest**
-- Reboot Setting **Reboot if Required**
-32. On the **Add/Modify schedule** page, provide the following information and choose **Save**.
--  Start on **12/01/2023 12:00 AM**
--  Maintenance Windows **3 hours 55 minutes**
--  Repeats **1 Day**
-33. On the **Create a maintenance Configuration** page, choose **Next: DynamicScopes**.
-34. On the Dynamic Scopes tab, choose Add a dynamic scope.
-35. On the **Add a dynamic scope** page, next to subscriptions select your subscription. Choose **Save**. When warned that not all Azure Machines shown in the preview are configured to schedule updates choose **Continue with supported machines only** and choose **Save**.
-36. On the **dynamic scopes** page, choose **Next: Resources**.
-37. On the **Resources** page, choose **Next: Updates**.
-38. On the **Updates** page, review the update classifications and choose **Review + Create**.
-39. On the **Review + Create** page, wait for validation to occur and then choose **Create**.
 
+### Exercise 4.3. Configure Defender for Cloud Settings
+
+In this exercise you will configure Defender for Cloud settings related to Azure IaaS VMs and view recommendations.
+
+4.2	You can see a quick audio free video showing the lab steps here: [Exercise 4.3 Demo Video](https://youtu.be/EKMbq3Lwz0o)
+
+1. In the Azure Portal Search bar, type **Defender for Cloud** and choose **Defender for Cloud** from the list of results.
+2. In the Defender for Cloud portal, type *Environment settings* in the Search bar and then select *Environment Settings*.
+3. On the Environment Settings page, choose Expand All and navigate down until you see the Azure subscription. It will have a name similar to *ignite-lodXXXXX*. Choose the Azure subscription to open it.
+4. On the **Settings | Defender Plans** page, choose **Settings & Monitoring**.
+5. On the **Settings & Monitoring** page, set **Vulnerability assessment for machines** to On.
+6. On the **Extension Deployment Configuration** page, select **Microsoft Defender Vulnerability Management** and choose **Apply**.
+7. On the **Extension Deployment Configuration** page, set **Guest Configuration Agent** to **On**. Choose **Continue** at the top of the page to apply settings and choose **Save** on the **Settings | Defender Plans** page.
+8. In the Azure Portal Search bar, type **Virtual Machines** and choose **Virtual Machines** from the list of results.
+9. On the list of virtual machines select **SYD-LINUX**.
+10. On the **SYD-LINUX** page type Defender in the search bar and then choose **Defender for Cloud**.
+11. On the list of recommendations for **SYD-LINUX** choose **Machines Should Have A Vulnerability Assessment Solution** if it is available. If this option is not available, continue on at Step 14.
+12. On the **Machines Should Have A Vulnerability Assessment Solution** page, choose **Fix**.
+13. On the **Choose A Vulnerability Assessment Solution** page, choose **Microsoft Defender Vulnerability Management** and choose **Proceed** and then choose **Fix 1 resource**.
+14. In the Azure Portal Search bar, type **Virtual Machines** and choose **Virtual Machines** from the list of results.
+15. In the list of virtual machines, choose **SYD-WS2022**.
+16. On the **SYD-WS2022** page type Defender in the search bar and then choose **Defender for Cloud**.
+17. On the **SYD-WS2022 | Defender for Cloud** page, review the recommendations and then choose **View Additional Recommendations in Defender for Cloud**.
+18. Review the additional information in Defender for Cloud related to the security of SYD-WS2022.
+===
 ## Section Five: IaaS VM BCDR
 
 This section requires that you have completed Section Zero and Exercise 2.3
 
 ### Exercise 5.1. Perform Virtual Machine Backup
 
-As you have enabled automanage in Exercise 2.3, each IaaS VM is already configured for backups. Whilst Automanage has been configured, it is unlikely that a backup has been taken as you have only enabled this service relatively recently. You can perform manual backups in addition to the backups managed through automanage at any time. You perform a manual backup by performing the following steps:
+As you have enabled automanage in Exercise 2.3, the Windwos Server IaaS VM is already configured for backups. Whilst Automanage has been configured, it is unlikely that a backup has been taken as you have only enabled this service relatively recently. You can perform manual backups in addition to the backups managed through automanage at any time. You perform a manual backup by performing the following steps:
 
-1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-LINUX**.
-2. On the SYD-LINUX page Search bar at the top of the list of items, type **Backup**.
-3. On the Welcome to Azure Backup for Azure VMs page, configure the following settings and choose **Enable Backup**.
-- Recovery Services Vault: Select Existing
-- Vault: Choose the **DefaultBackupVault** for your region.
-- Policy sub type: **Standard**
-- Choose Backup Policy: **DefaultPolicy**
-4. On the **Backup** page, choose **Backup Now**.
-5. On the **Retain Backup Until** page, accept the default and choose **OK**.
-6. After the deployment completes, in the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-LINUX**.
-7. On the SYD-LINUX page Search bar at the top of the list of items, type **Backup**.
-8. On the SYD-LINUX Backup page, choose **Backup Now**.
-9. On the **Backup Now** page, accept the default retention date and choose **OK**.
-10. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
-11. On the SYD-WS2022 page Search bar at the top of the list of items, type **Backup**.
-12. On the SYD-WS2022 page, note that backup is already configured by automanage but that the initial backup is pending and hasn’t been completed. Choose **Backup Now**.
-13. On the **Backup Now** page, accept the default backup retention option and choose **OK**.
+5.1	You can see a quick audio free video showing the lab steps here: [Exercise 5.1 Demo Video](https://youtu.be/SZjoxpD9O8s)
 
-### Exercise 5.2: Configure Azure Size Recovery
+1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
+2. On the SYD-WS2022 page Search bar at the top of the list of items, type **Backup**.
+3. On the SYD-WS2022 page, note that backup is already configured by automanage but that the initial backup is pending and hasn’t been completed. Choose **Backup Now**.
+4. On the **Backup Now** page, accept the default backup retention option and choose **OK**.
+
+### Exercise 5.2: Configure Azure Site Recovery
 
 Azure Site Recovery allows you to failover a virtual machine from one Azure region to another. In this exercise you'll configure replication for an encrypted virtual machine from one region to another.
+
+5.2 You can see a quick audio free video showing the lab steps here: [Exercise 2.1 Demo Video](https://youtu.be/KcrxNGg7nAQ)
 
 1. In the Search bar of the Azure Portal, type **Virtual Machines** and then choose **Virtual Machines**. In the list of virtual machines, select **SYD-WS2022**.
 2. On the SYD-WS2022 page Search bar at the top of the list of items, type **Disaster Recovery**. Select **Disaster Recovery**.
 3. On the SYD-WS2022 Disaster Recovery Page, accept the default Target Region (which will be different from the current region the VM is located in) and choose **Next: Advanced Settings**.
 4. On the Advanced Settings page, review the automatically assigned resource group, virtual network, and key vault names that will be created and choose Next: **Review + Start Replication**.
-5.  On the **Review + Start Replication** page, choose **Start Replication**.
+5.  On the **Review + Start Replication** page, choose **Start Replication**. 
+
+**At this point you will notice an error about incorrect permissions being configured for the existing and recovery site key vault. To enable Replication you will need to configure these permissions on both the source and destination key vaults. This is not necessary except in the case of BitLocker and DM-Crypt encrypted IaaS VMs.**
+
 6.  Open the Azure Portal in a new browser tab and in the Search bar type **Resource Groups**. Select **Resource Groups**.
 7.  In the list of resource groups, select InfraResourceGroup.
 8.  In the **InfraResourceGroup** resource group, select the **IaaSVMKVXXXXX** key vault.
@@ -739,7 +746,7 @@ Azure Site Recovery allows you to failover a virtual machine from one Azure regi
 
 ### Exercise 5.3. Perform VM Test Failover
 
-1. When replication has successfully been enabled and the replication status is **Healthy**, click **Refresh**. An infrastructure view will display the virtual machine, Azure Site Recovery, and any managed disks.
+1. Navigate back to the Disaster Recovery page for SYD-WS2022. When replication has successfully been enabled and the replication status is **Healthy**, click **Refresh**. An infrastructure view will display the virtual machine, Azure Site Recovery, and any managed disks.
 2. Click **Refresh** until the Status field lists **Protected** and the **Test Failover** item becomes available.
 3. On the SYD-WS2022 page, choose **Test Failover**.
 4. On the Test Failover page, set the Azure Virtual Network to **InfraVNet-asr** and choose Test Failover.
@@ -750,4 +757,3 @@ Azure Site Recovery allows you to failover a virtual machine from one Azure regi
 9. The test failover environment will be removed from the secondary datacenter.
 
 ### Congratulations you have finished this lab! 
-### Please remember to complete an evaluation!
