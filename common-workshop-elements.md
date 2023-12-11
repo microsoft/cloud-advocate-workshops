@@ -13,3 +13,4 @@ The following is a list of elements present across a variety of Advocate worksho
 - Workshops often include the ability to provide centralized feedback through a form.
 - Workshops often contain links to supporting content on learn.microsoft.com.
 - Some workshops include Clarity for tracking of attendee usage (often when built using Docusaurus)
+- Workshops contain embedded videos with technical overviews, business case, and lab walk-throughs 

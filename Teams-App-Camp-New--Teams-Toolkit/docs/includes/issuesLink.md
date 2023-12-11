@@ -1,0 +1,1 @@
+For the latest issues, or to file a bug report, see the [GitHub issues list](https://github.com/microsoft/app-camp/issues){target="_blank"} for this repository.
