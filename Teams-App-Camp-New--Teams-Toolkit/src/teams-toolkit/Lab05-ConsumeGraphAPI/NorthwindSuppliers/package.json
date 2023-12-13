@@ -20,7 +20,7 @@
   "dependencies": {
     "@microsoft/teamsfx": "^2.2.0",
     "adaptivecards-templating": "^2.3.1",
-    "botbuilder": "^4.18.0",
+    "botbuilder": "^4.21.3",
     "isomorphic-fetch": "^3.0.0",
     "openai": "^3.2.1",
     "restify": "^10.0.0"
