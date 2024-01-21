@@ -20,7 +20,7 @@ This workshop has the following objectives:
 
 In order to perform the exercises in this workshop, you will need:
 
-- An Azure subscription with limits to deploy an AKS cluster, an Azure VM, an Azure vNet, and an Azure Key Vault.
+- An Azure subscription with role of Owner and limits to deploy an AKS cluster, an Azure VM, an Azure vNet, and an Azure Key Vault. 
 - Internet access to open a browser session with the Azure Portal.
 
 ## Exercise 01 - Spinning up Azure environment
@@ -37,11 +37,12 @@ To deploy this environment:
 1. Open a new browser session and navigate to [https://portal.azure.com](https://portal.azure.com)
 2. Login to the Azure portal with your credential.
 3. On the Azure portal, click the Cloud Shell button on the top right-corner.
-4. If a message "You have no storage mounted" appears, select the subscription you want to perform this exercise and click "Create Storage".
-5. On the new Cloud Shell window, make sure "PowerShell" is the selected shell on the top left-corner. If Bash is selected, select PowerShell and wait for the Cloud Shell session to reload.
-6. On the Cloud Shell window, select the upload/download files icon. Click Upload. On the window to select the file to upload, select the DeployAKS.ps1 file that accompanies this workshop.
-7. On the Cloud Shell window, close the information banner that confirmed the file was uploaded and run "./DeployAKS.ps1".
-8. Provide the following information when asked:
+4. If a message "You have no storage mounted" appears, select the subscription you want to perform this exercise with and click "Create Storage". No need to use an existing private virtual network if prompted.
+5. Azure may ask how you want to create a storage account, select "We will create a storage account for you".
+6. On the new Cloud Shell window, make sure "PowerShell" is the selected shell on the top left-corner. If Bash is selected, select PowerShell and wait for the Cloud Shell session to reload.
+7. On the Cloud Shell window, select the upload/download files icon. Click Upload. On the window to select the file to upload, select the DeployAKS.ps1 file that accompanies this workshop.
+8. On the Cloud Shell window, close the information banner that confirmed the file was uploaded and run "./DeployAKS.ps1".
+9. Provide the following information when asked:
 
 - Resource Group Name: GMSATestRG
 - Resource Group Location: westus2 (You can use a different location depending on your geo-location)
@@ -121,7 +122,7 @@ Note: We are using the DC01 VM to run the AksGMSA PowerShell module. This is for
 5. On the DC01 view, click the Bastion option under Connect in the left-hand side menu.
 6. On the DC01 | Bastion view, provide the username and password used to create the DC01 VM and click Connect.
 7. On the new browser window opened by Bastion, the RDP session to the DC01 VM will be established. Make sure to select "Allow" in the pop-up window to allow copy/paste between your machine and the RDP session. Once the VM is logged on, close the Server Manager windows.
-8. Click the Start menu, right-click the Windows PowerShell icon and select More -> Run as Administrator.
+8. Click the Start menu, search Powershell, right-click the Windows PowerShell icon and select More -> Run as Administrator.
 9. On the Powershell session, run "Install-Module -Name AksGMSA -Repository PSGallery -Force"
 10. When asked to install and import the NuGet provider, type "Y" to install it.
 11. Once the packages have been installed, type "Install-ToolingRequirements"
@@ -143,16 +144,16 @@ The AksGMSA module is now installed and the Azure connectivity is established. N
 - AD Domain FQDN: contoso.local
 - gMSA name: gmsa
 - gMSA Domain user name: Microsoft
-- gMSA Domain user password: M1cr0s0ft@2023 (If you used a different password, replace this with that password)
+- gMSA Domain user password: M1cr0s0ft@2024 (If you used a different password, replace this with that password)
 - Azure location: westus2 (If you used a different location, replace this with that location)
-- AKV name: gmsa<variable>test (Replace variable for something unique. Azure Key Vault names need to be unique. You can replace it with your name, a date, etc. Use lowercase letters and numbers and keep it all together, no spaces.)
+- AKV name: gmsa<variable>test (Replace variable for something unique. Azure Key Vault names need to be unique to all key vaults in Azure. We suggest concatenating your name, a date, etc. Use lowercase letters and numbers and keep it all together, no spaces.)
 - AKV secret name: gmsasecret
 - Azure MI name: gmsami
 - gMSA spec name: credspec
-- Local logs directory: <leave blank>
+- Local logs directory: (leave blank)
 - AD Domain controller address: <DC01_VM_IP_Address> (replace the DC01_VM_IP_Address with the internal IP address of the DC01 VM)
 - Domain admin user name: Microsoft
-- Domain admin user password: M1cr0s0ft@2023 (If you used a different password, replace this with that password)
+- Domain admin user password: M1cr0s0ft@2024 (If you used a different password, replace this with that password)
 
 19. To validate the connection to the AKS cluster, run the following PowerShell code block:
 
@@ -323,7 +324,7 @@ The above command will deploy a YAML specification to the AKS cluster. That spec
 2. Run the command "kubectl get pods -w". Wait until the pod status for the "credspec-demo-XXXXXX" changes from ContainerCreating to Running.
 3. Run the command "kubectl get service". Copy the external IP address of the service "credspec-demo" deployed for the sample application.
 4. Open a browser session and navigate to http://<IP_Address> (Replace IP_address with the IP address you copied in the previous step).
-5. When asked for credentials, type the username and password for the credentials we used to deploy both the DC01 VM and domain. (This should be the username Microsoft and password M1cr0s0ft@2023, unless you changed these settings)
+5. When asked for credentials, type the username and password for the credentials we used to deploy both the DC01 VM and domain. (This should be the username Microsoft and password M1cr0s0ft@2024, unless you changed these settings)
 
 Once you log in, the webpage will show the information about the logged user. This confirms the Windows pod was able to communicated with the Domain Controller to authenticate and authorize the access.
 
